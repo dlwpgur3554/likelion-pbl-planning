@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 2400" width="1400" height="2400" font-family="'Noto Sans CJK KR', 'Noto Sans KR', sans-serif">
+
+  <!-- Background -->
+  <rect width="1400" height="2400" fill="#fafaf7"/>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <polygon points="0 0, 12 6, 0 12" fill="#1a1a1a"/>
+    </marker>
+    <marker id="arrowDashed" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <polygon points="0 0, 12 6, 0 12" fill="#1a1a1a"/>
+    </marker>
+  </defs>
+
+  <!-- ===== HEADER ===== -->
+  <text x="60" y="60" font-size="11" fill="#666" letter-spacing="1.5" font-family="'Noto Sans CJK KR', monospace">MISSION 04 / USER FLOW · F1</text>
+  <text x="60" y="92" font-size="26" font-weight="600" fill="#1a1a1a" letter-spacing="-0.5">신규 사용자 첫 전략 배포 플로우</text>
+  <text x="1340" y="60" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">FLOW 1 of 2</text>
+  <text x="1340" y="76" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">작성자: 이제혁</text>
+  <line x1="60" y1="115" x2="1340" y2="115" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- ===== LEGEND ===== -->
+  <g transform="translate(60, 140)">
+    <rect width="1280" height="70" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+    <text x="20" y="25" font-size="11" fill="#666" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1">STANDARD SYMBOLS</text>
+
+    <!-- 타원: 시작/종료 -->
+    <ellipse cx="180" cy="48" rx="50" ry="18" fill="#1a1a1a"/>
+    <text x="180" y="52" font-size="11" fill="#fff" text-anchor="middle" font-weight="600">시작/종료</text>
+    <text x="245" y="52" font-size="11" fill="#1a1a1a">타원 = Start / End</text>
+
+    <!-- 직사각형: 행동 -->
+    <rect x="430" y="32" width="100" height="32" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+    <text x="480" y="52" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="600">행동</text>
+    <text x="545" y="52" font-size="11" fill="#1a1a1a">직사각형 = Action</text>
+
+    <!-- 마름모: 분기 -->
+    <polygon points="720,48 760,28 800,48 760,68" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+    <text x="760" y="52" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="600">분기</text>
+    <text x="815" y="52" font-size="11" fill="#1a1a1a">마름모 = Decision</text>
+
+    <!-- 화살표 흐름 -->
+    <line x1="970" y1="48" x2="1000" y2="48" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="1015" y="52" font-size="11" fill="#1a1a1a">정상 흐름</text>
+
+    <line x1="1130" y1="48" x2="1160" y2="48" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arrowDashed)"/>
+    <text x="1175" y="52" font-size="11" fill="#1a1a1a">예외 흐름</text>
+  </g>
+
+  <!-- ===== FLOW 1: 첫 전략 배포 ===== -->
+
+  <!-- START -->
+  <ellipse cx="700" cy="270" rx="100" ry="30" fill="#1a1a1a"/>
+  <text x="700" y="276" font-size="13" fill="#fafaf7" text-anchor="middle" font-weight="600">START · 랜딩 진입</text>
+
+  <line x1="700" y1="300" x2="700" y2="345" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 1. 회원가입 -->
+  <rect x="580" y="355" width="240" height="55" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="700" y="378" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="600">회원가입 폼 작성</text>
+  <text x="700" y="396" font-size="11" fill="#666" text-anchor="middle">이메일 + 비밀번호 + 약관 동의</text>
+
+  <line x1="700" y1="410" x2="700" y2="450" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 2. 이메일 인증 (분기) -->
+  <polygon points="700,460 830,520 700,580 570,520" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="700" y="515" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">이메일</text>
+  <text x="700" y="532" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">인증 성공?</text>
+
+  <!-- NO branch (실패 → 재발송) -->
+  <line x1="570" y1="520" x2="430" y2="520" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arrowDashed)"/>
+  <text x="500" y="510" font-size="11" fill="#1a1a1a" font-weight="600">No</text>
+
+  <rect x="280" y="495" width="150" height="50" fill="#1a1a1a" fill-opacity="0.1" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <text x="355" y="515" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="600">⚠️ 인증 메일 재발송</text>
+  <text x="355" y="532" font-size="10" fill="#666" text-anchor="middle">최대 3회</text>
+
+  <!-- 재발송 → 인증으로 복귀 -->
+  <path d="M 355 545 L 355 600 L 700 600 L 700 580" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arrowDashed)"/>
+
+  <!-- YES → 로그인/온보딩 -->
+  <line x1="700" y1="580" x2="700" y2="635" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="710" y="615" font-size="11" fill="#1a1a1a" font-weight="600">Yes</text>
+
+  <!-- 3. 온보딩 튜토리얼 -->
+  <rect x="580" y="645" width="240" height="55" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="700" y="668" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="600">온보딩 튜토리얼 (4 step)</text>
+  <text x="700" y="686" font-size="11" fill="#666" text-anchor="middle">서비스 사용법 가이드</text>
+
+  <line x1="700" y1="700" x2="700" y2="740" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 4. 거래소 선택 -->
+  <rect x="580" y="750" width="240" height="55" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="700" y="773" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="600">거래소 선택</text>
+  <text x="700" y="791" font-size="11" fill="#666" text-anchor="middle">업비트 / 바이낸스 / Bybit</text>
+
+  <line x1="700" y1="805" x2="700" y2="845" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 5. API 키 입력 -->
+  <rect x="580" y="855" width="240" height="55" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="700" y="878" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="600">API 키 입력</text>
+  <text x="700" y="896" font-size="11" fill="#666" text-anchor="middle">API Key + Secret 입력</text>
+
+  <line x1="700" y1="910" x2="700" y2="950" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 6. 권한 검증 (분기) -->
+  <polygon points="700,960 840,1020 700,1080 560,1020" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="700" y="1010" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">API 키</text>
+  <text x="700" y="1027" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">유효?</text>
+
+  <!-- NO branch -->
+  <line x1="560" y1="1020" x2="430" y2="1020" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arrowDashed)"/>
+  <text x="490" y="1010" font-size="11" fill="#1a1a1a" font-weight="600">No</text>
+
+  <rect x="280" y="995" width="150" height="50" fill="#1a1a1a" fill-opacity="0.1" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <text x="355" y="1015" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="600">⚠️ 오류 안내</text>
+  <text x="355" y="1032" font-size="10" fill="#666" text-anchor="middle">권한·키 재확인 가이드</text>
+
+  <path d="M 355 1045 L 355 1095 L 580 1095 L 580 882 L 580 882" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <line x1="580" y1="882" x2="580" y2="882" stroke="#1a1a1a" stroke-width="1.5" marker-end="url(#arrowDashed)"/>
+  <text x="450" y="1090" font-size="10" fill="#666">키 재입력 화면으로</text>
+
+  <!-- YES → GPT 전략 생성 -->
+  <line x1="700" y1="1080" x2="700" y2="1135" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="710" y="1115" font-size="11" fill="#1a1a1a" font-weight="600">Yes</text>
+
+  <!-- 7. GPT 채팅 -->
+  <rect x="580" y="1145" width="240" height="55" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="700" y="1168" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="600">GPT 채팅 입력</text>
+  <text x="700" y="1186" font-size="11" fill="#666" text-anchor="middle">자연어로 전략 요청</text>
+
+  <line x1="700" y1="1200" x2="700" y2="1240" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 8. GPT 결과 확인 -->
+  <rect x="580" y="1250" width="240" height="55" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="700" y="1273" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="600">GPT 추천 결과 확인</text>
+  <text x="700" y="1291" font-size="11" fill="#666" text-anchor="middle">전략 카드 미리보기</text>
+
+  <line x1="700" y1="1305" x2="700" y2="1345" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 9. 만족 여부 (분기) -->
+  <polygon points="700,1355 850,1420 700,1485 550,1420" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="700" y="1410" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">전략에</text>
+  <text x="700" y="1427" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">만족?</text>
+
+  <!-- NO branch (블록 편집) -->
+  <line x1="550" y1="1420" x2="430" y2="1420" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="485" y="1410" font-size="11" fill="#1a1a1a" font-weight="600">No</text>
+
+  <rect x="280" y="1395" width="150" height="50" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="355" y="1415" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="600">No-Code 블록 편집</text>
+  <text x="355" y="1432" font-size="10" fill="#666" text-anchor="middle">트리거·액션·손절</text>
+
+  <path d="M 280 1420 L 220 1420 L 220 1500 L 700 1500 L 700 1485" fill="none" stroke="#1a1a1a" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- YES → 백테스팅 -->
+  <line x1="700" y1="1485" x2="700" y2="1540" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="710" y="1520" font-size="11" fill="#1a1a1a" font-weight="600">Yes</text>
+
+  <!-- 10. 백테스팅 실행 -->
+  <rect x="580" y="1550" width="240" height="55" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="700" y="1573" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="600">백테스팅 실행</text>
+  <text x="700" y="1591" font-size="11" fill="#666" text-anchor="middle">기간·종목 설정 후 시뮬레이션</text>
+
+  <line x1="700" y1="1605" x2="700" y2="1645" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 11. 성과 합격? (분기) -->
+  <polygon points="700,1655 850,1720 700,1785 550,1720" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="700" y="1705" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">백테스팅</text>
+  <text x="700" y="1722" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">성과 OK?</text>
+
+  <!-- NO branch (전략 수정 루프) -->
+  <line x1="850" y1="1720" x2="970" y2="1720" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arrowDashed)"/>
+  <text x="900" y="1710" font-size="11" fill="#1a1a1a" font-weight="600">No</text>
+
+  <rect x="975" y="1695" width="150" height="50" fill="#1a1a1a" fill-opacity="0.1" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <text x="1050" y="1715" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="600">⚠️ 전략 수정 권장</text>
+  <text x="1050" y="1732" font-size="10" fill="#666" text-anchor="middle">수익률·MDD 부족</text>
+
+  <path d="M 1125 1720 L 1180 1720 L 1180 1420 L 850 1420" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="5 3" marker-end="url(#arrowDashed)"/>
+  <text x="1190" y="1570" font-size="10" fill="#666">편집 화면으로 복귀</text>
+
+  <!-- YES → 배포 -->
+  <line x1="700" y1="1785" x2="700" y2="1840" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="710" y="1820" font-size="11" fill="#1a1a1a" font-weight="600">Yes</text>
+
+  <!-- 12. 자본 배분 -->
+  <rect x="580" y="1850" width="240" height="55" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="700" y="1873" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="600">자본 배분 설정</text>
+  <text x="700" y="1891" font-size="11" fill="#666" text-anchor="middle">투입 금액·최대 손실 한도</text>
+
+  <line x1="700" y1="1905" x2="700" y2="1945" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- 13. 전략 배포 (실거래 ON) -->
+  <rect x="580" y="1955" width="240" height="55" fill="#1a1a1a"/>
+  <text x="700" y="1978" font-size="13" fill="#fafaf7" text-anchor="middle" font-weight="600">전략 배포 (실거래 ON)</text>
+  <text x="700" y="1996" font-size="11" fill="#ccc" text-anchor="middle">2FA 재인증 + 활성화</text>
+
+  <line x1="700" y1="2010" x2="700" y2="2050" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- END -->
+  <ellipse cx="700" cy="2080" rx="160" ry="30" fill="#1a1a1a"/>
+  <text x="700" y="2086" font-size="13" fill="#fafaf7" text-anchor="middle" font-weight="600">END · 대시보드 진입</text>
+
+  <!-- Footer -->
+  <line x1="60" y1="2340" x2="1340" y2="2340" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="60" y="2365" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">FLOW 1 · 신규 사용자 첫 전략 배포 — 13 STEPS · 4 DECISIONS · 3 EXCEPTIONS</text>
+  <text x="1340" y="2365" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">작성자: 이제혁 / PBL WK04</text>
+
+</svg>

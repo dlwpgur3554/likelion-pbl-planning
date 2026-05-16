@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 2200" width="1400" height="2200" font-family="'Noto Sans CJK KR', 'Noto Sans KR', sans-serif">
+
+  <!-- Background -->
+  <rect width="1400" height="2200" fill="#fafaf7"/>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrow2" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <polygon points="0 0, 12 6, 0 12" fill="#1a1a1a"/>
+    </marker>
+    <marker id="arrowDashed2" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto">
+      <polygon points="0 0, 12 6, 0 12" fill="#1a1a1a"/>
+    </marker>
+  </defs>
+
+  <!-- ===== HEADER ===== -->
+  <text x="60" y="60" font-size="11" fill="#666" letter-spacing="1.5" font-family="'Noto Sans CJK KR', monospace">MISSION 04 / USER FLOW · F2</text>
+  <text x="60" y="92" font-size="26" font-weight="600" fill="#1a1a1a" letter-spacing="-0.5">API 오류 대응 플로우 (Unhappy Path 중심)</text>
+  <text x="1340" y="60" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">FLOW 2 of 2</text>
+  <text x="1340" y="76" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">작성자: 이제혁</text>
+  <line x1="60" y1="115" x2="1340" y2="115" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Context box -->
+  <g transform="translate(60, 140)">
+    <rect width="1280" height="80" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+    <text x="20" y="28" font-size="11" fill="#666" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1">CONTEXT — 시나리오 CUT 5 기반</text>
+    <text x="20" y="50" font-size="13" fill="#1a1a1a">사용자가 회의 중이라 즉시 대응 불가능한 상태에서, 거래소 API 일시 장애 발생 시 시스템이 어떻게 자동 복구하는지를 다룬 플로우</text>
+    <text x="20" y="70" font-size="11" fill="#666">핵심 트리거: 거래소 API 응답 실패 → 시스템 자동 감지 → 재연결 + RL 엔진 변동성 대응 → 사용자 사후 통보</text>
+  </g>
+
+  <!-- ===== FLOW 2 ===== -->
+
+  <!-- START -->
+  <ellipse cx="700" cy="290" rx="180" ry="30" fill="#1a1a1a"/>
+  <text x="700" y="296" font-size="13" fill="#fafaf7" text-anchor="middle" font-weight="600">START · 전략 자동매매 운영 중</text>
+
+  <line x1="700" y1="320" x2="700" y2="365" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- 1. 시스템 매매 신호 생성 -->
+  <rect x="580" y="375" width="240" height="55" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="700" y="398" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="600">시스템 매매 신호 생성</text>
+  <text x="700" y="416" font-size="11" fill="#666" text-anchor="middle">전략 조건 충족 → 주문 시도</text>
+
+  <line x1="700" y1="430" x2="700" y2="470" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- 2. API 호출 -->
+  <rect x="580" y="480" width="240" height="55" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="700" y="503" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="600">거래소 API 호출</text>
+  <text x="700" y="521" font-size="11" fill="#666" text-anchor="middle">업비트 주문 전송</text>
+
+  <line x1="700" y1="535" x2="700" y2="575" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- 3. API 응답 정상? (분기 1) -->
+  <polygon points="700,585 850,650 700,715 550,650" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="700" y="640" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">API 응답</text>
+  <text x="700" y="657" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">정상?</text>
+
+  <!-- YES branch (Happy Path) -->
+  <line x1="850" y1="650" x2="970" y2="650" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow2)"/>
+  <text x="900" y="640" font-size="11" fill="#1a1a1a" font-weight="600">Yes</text>
+
+  <rect x="975" y="625" width="200" height="50" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="1075" y="645" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">매매 정상 체결</text>
+  <text x="1075" y="662" font-size="10" fill="#666" text-anchor="middle">거래 내역 업데이트</text>
+
+  <!-- Happy path → END (right side) -->
+  <line x1="1075" y1="675" x2="1075" y2="2030" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="1075" y1="2030" x2="860" y2="2030" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- ===== UNHAPPY PATH START ===== -->
+  <line x1="700" y1="715" x2="700" y2="760" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arrowDashed2)"/>
+  <text x="710" y="740" font-size="11" fill="#1a1a1a" font-weight="600">No ⚠️</text>
+
+  <!-- 4. 오류 유형 감지 -->
+  <rect x="540" y="770" width="320" height="55" fill="#1a1a1a" fill-opacity="0.1" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <text x="700" y="793" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="600">⚠️ 오류 유형 감지</text>
+  <text x="700" y="811" font-size="11" fill="#666" text-anchor="middle">타임아웃 / 인증실패 / 거래소 점검</text>
+
+  <line x1="700" y1="825" x2="700" y2="865" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arrowDashed2)"/>
+
+  <!-- 5. 오류 유형? (분기 2) -->
+  <polygon points="700,875 870,960 700,1045 530,960" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="700" y="945" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">오류 유형</text>
+  <text x="700" y="962" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">분류</text>
+  <text x="700" y="980" font-size="10" fill="#666" text-anchor="middle">(Network / Auth / Maintenance)</text>
+
+  <!-- Branch A: Network (재연결) -->
+  <line x1="530" y1="960" x2="370" y2="960" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arrowDashed2)"/>
+  <text x="445" y="950" font-size="11" fill="#1a1a1a" font-weight="600">Network</text>
+
+  <rect x="180" y="935" width="190" height="50" fill="#1a1a1a" fill-opacity="0.1" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <text x="275" y="955" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">↻ 자동 재연결 시도</text>
+  <text x="275" y="972" font-size="10" fill="#666" text-anchor="middle">최대 3회 (5초 간격)</text>
+
+  <!-- Branch B: Auth (사용자 알림) -->
+  <line x1="870" y1="960" x2="1030" y2="960" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arrowDashed2)"/>
+  <text x="950" y="950" font-size="11" fill="#1a1a1a" font-weight="600">Auth</text>
+
+  <rect x="1035" y="935" width="190" height="50" fill="#1a1a1a" fill-opacity="0.1" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <text x="1130" y="955" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">⚠️ 키 만료 알림 발송</text>
+  <text x="1130" y="972" font-size="10" fill="#666" text-anchor="middle">사용자 재인증 요청</text>
+
+  <!-- Branch C: Maintenance (대기) -->
+  <line x1="700" y1="1045" x2="700" y2="1090" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arrowDashed2)"/>
+  <text x="710" y="1070" font-size="11" fill="#1a1a1a" font-weight="600">Maintenance</text>
+
+  <rect x="580" y="1100" width="240" height="55" fill="#1a1a1a" fill-opacity="0.1" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <text x="700" y="1123" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="600">⏸ 매매 일시정지</text>
+  <text x="700" y="1141" font-size="11" fill="#666" text-anchor="middle">거래소 점검 종료 대기</text>
+
+  <!-- Network 재연결 → 분기 3 -->
+  <line x1="275" y1="985" x2="275" y2="1090" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arrowDashed2)"/>
+
+  <polygon points="275,1100 410,1165 275,1230 140,1165" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="275" y="1158" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">재연결</text>
+  <text x="275" y="1175" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">성공?</text>
+
+  <!-- 재연결 실패 → 사용자 알림 -->
+  <line x1="140" y1="1165" x2="60" y2="1165" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arrowDashed2)"/>
+  <text x="100" y="1155" font-size="11" fill="#1a1a1a" font-weight="600">No</text>
+
+  <rect x="20" y="1230" width="180" height="50" fill="#1a1a1a" fill-opacity="0.1" stroke="#1a1a1a" stroke-width="1.5" stroke-dasharray="4 2"/>
+  <text x="110" y="1250" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="600">⚠️ Critical 알림 발송</text>
+  <text x="110" y="1267" font-size="10" fill="#666" text-anchor="middle">사용자 개입 요청</text>
+
+  <path d="M 60 1165 L 60 1255 L 20 1255" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="5 3"/>
+
+  <!-- 재연결 성공 → RL 엔진 -->
+  <line x1="275" y1="1230" x2="275" y2="1290" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arrowDashed2)"/>
+  <text x="285" y="1270" font-size="11" fill="#1a1a1a" font-weight="600">Yes</text>
+
+  <!-- Auth 분기 결과 → 사용자 처리 대기 -->
+  <line x1="1130" y1="985" x2="1130" y2="1290" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arrowDashed2)"/>
+
+  <!-- Maintenance 결과 → 점검 종료 후 복귀 -->
+  <line x1="700" y1="1155" x2="700" y2="1290" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="5 3" marker-end="url(#arrowDashed2)"/>
+  <text x="710" y="1240" font-size="11" fill="#666">점검 종료</text>
+
+  <!-- 8. RL 엔진 자동 대응 (모든 복구 경로 수렴) -->
+  <rect x="155" y="1300" width="240" height="55" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="275" y="1323" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="600">RL 엔진 변동성 대응</text>
+  <text x="275" y="1341" font-size="11" fill="#666" text-anchor="middle">포지션 자동 축소</text>
+
+  <rect x="580" y="1300" width="240" height="55" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="700" y="1323" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="600">매매 재개</text>
+  <text x="700" y="1341" font-size="11" fill="#666" text-anchor="middle">정상 흐름 복귀</text>
+
+  <rect x="1010" y="1300" width="240" height="55" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="1130" y="1323" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="600">키 재등록 대기</text>
+  <text x="1130" y="1341" font-size="11" fill="#666" text-anchor="middle">사용자 액션 필요</text>
+
+  <!-- 모두 → 통합 알림 단계 -->
+  <line x1="275" y1="1355" x2="275" y2="1410" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow2)"/>
+  <line x1="700" y1="1355" x2="700" y2="1410" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow2)"/>
+  <line x1="1130" y1="1355" x2="1130" y2="1410" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- 9. 푸시 알림 발송 -->
+  <rect x="155" y="1420" width="240" height="55" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="275" y="1443" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="600">사후 통보 알림</text>
+  <text x="275" y="1461" font-size="11" fill="#666" text-anchor="middle">"자동 복구 완료"</text>
+
+  <rect x="580" y="1420" width="240" height="55" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="700" y="1443" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="600">실시간 알림</text>
+  <text x="700" y="1461" font-size="11" fill="#666" text-anchor="middle">"매매 정상화 완료"</text>
+
+  <rect x="1010" y="1420" width="240" height="55" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="1130" y="1443" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="600">긴급 알림 전송</text>
+  <text x="1130" y="1461" font-size="11" fill="#666" text-anchor="middle">푸시 + 이메일 동시</text>
+
+  <line x1="275" y1="1475" x2="275" y2="1530" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow2)"/>
+  <line x1="700" y1="1475" x2="700" y2="1530" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow2)"/>
+  <line x1="1130" y1="1475" x2="1130" y2="1530" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- 10. 모든 경로 수렴: 시스템 상태 페이지 업데이트 -->
+  <rect x="380" y="1540" width="640" height="55" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="700" y="1563" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="600">시스템 상태 페이지 / RL 모니터 업데이트</text>
+  <text x="700" y="1581" font-size="11" fill="#666" text-anchor="middle">이벤트 로그 기록 + 학습 데이터 누적</text>
+
+  <line x1="275" y1="1530" x2="275" y2="1568" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="275" y1="1568" x2="380" y2="1568" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow2)"/>
+  <line x1="1130" y1="1530" x2="1130" y2="1568" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="1130" y1="1568" x2="1020" y2="1568" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <line x1="700" y1="1595" x2="700" y2="1640" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- 11. 사용자 확인? (분기 4) -->
+  <polygon points="700,1650 870,1735 700,1820 530,1735" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="700" y="1725" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">사용자가</text>
+  <text x="700" y="1742" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="600">알림 확인?</text>
+
+  <!-- Auto resolved -->
+  <line x1="870" y1="1735" x2="990" y2="1735" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow2)"/>
+  <text x="930" y="1725" font-size="11" fill="#1a1a1a" font-weight="600">No</text>
+
+  <rect x="990" y="1710" width="200" height="50" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="1090" y="1730" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="600">자동 해결 완료</text>
+  <text x="1090" y="1747" font-size="10" fill="#666" text-anchor="middle">차후 확인 시 표시</text>
+
+  <line x1="1090" y1="1760" x2="1090" y2="2030" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Yes → 대시보드 -->
+  <line x1="700" y1="1820" x2="700" y2="1870" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow2)"/>
+  <text x="710" y="1850" font-size="11" fill="#1a1a1a" font-weight="600">Yes</text>
+
+  <!-- 12. 대시보드에서 확인 -->
+  <rect x="580" y="1880" width="240" height="55" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <text x="700" y="1903" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="600">대시보드에서 확인</text>
+  <text x="700" y="1921" font-size="11" fill="#666" text-anchor="middle">이벤트 로그·복구 과정 검토</text>
+
+  <line x1="700" y1="1935" x2="700" y2="1975" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow2)"/>
+
+  <!-- 13. END -->
+  <ellipse cx="700" cy="2030" rx="170" ry="30" fill="#1a1a1a"/>
+  <text x="700" y="2036" font-size="13" fill="#fafaf7" text-anchor="middle" font-weight="600">END · 신뢰 형성 + 운영 지속</text>
+
+  <!-- Footer -->
+  <line x1="60" y1="2140" x2="1340" y2="2140" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="60" y="2165" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">FLOW 2 · API 오류 대응 — 13 STEPS · 4 DECISIONS · 3 RECOVERY PATHS · UNHAPPY PATH 중심</text>
+  <text x="1340" y="2165" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">작성자: 이제혁 / PBL WK04</text>
+
+</svg>
