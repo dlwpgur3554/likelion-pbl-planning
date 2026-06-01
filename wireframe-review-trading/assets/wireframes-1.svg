@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 2700" width="1800" height="2700" font-family="'Noto Sans CJK KR', sans-serif">
+
+  <rect width="1800" height="2700" fill="#fafaf7"/>
+
+  <!-- ===== HEADER ===== -->
+  <text x="60" y="60" font-size="11" fill="#666" letter-spacing="1.5" font-family="'Noto Sans CJK KR', monospace">MISSION 06 / WIREFRAMES</text>
+  <text x="60" y="92" font-size="26" font-weight="600" fill="#1a1a1a" letter-spacing="-0.5">핵심 화면 와이어프레임 (Low-fidelity)</text>
+  <text x="1740" y="60" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">6 SCREENS · LO-FI</text>
+  <text x="1740" y="76" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">작성자: 이제혁</text>
+  <line x1="60" y1="115" x2="1740" y2="115" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- ====== Screen 1: 랜딩 페이지 ====== -->
+  <text x="60" y="160" font-size="11" fill="#666" font-family="'Noto Sans CJK KR', monospace">W1 / LANDING</text>
+  <text x="60" y="186" font-size="18" font-weight="600" fill="#1a1a1a">1. 랜딩 페이지</text>
+
+  <rect x="60" y="210" width="800" height="500" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Top nav -->
+  <line x1="60" y1="260" x2="860" y2="260" stroke="#1a1a1a" stroke-width="1"/>
+  <rect x="80" y="225" width="80" height="20" fill="#1a1a1a"/>
+  <text x="120" y="240" font-size="11" fill="#fff" text-anchor="middle" font-weight="600">LOGO</text>
+  <rect x="640" y="227" width="60" height="16" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
+  <text x="670" y="239" font-size="10" fill="#666" text-anchor="middle">기능</text>
+  <rect x="710" y="227" width="60" height="16" fill="none" stroke="#1a1a1a" stroke-width="0.5"/>
+  <text x="740" y="239" font-size="10" fill="#666" text-anchor="middle">요금제</text>
+  <rect x="780" y="223" width="60" height="22" fill="#1a1a1a"/>
+  <text x="810" y="237" font-size="10" fill="#fff" text-anchor="middle" font-weight="600">시작하기</text>
+
+  <!-- Hero -->
+  <text x="460" y="340" font-size="20" font-weight="700" fill="#1a1a1a" text-anchor="middle">[Headline Text]</text>
+  <text x="460" y="365" font-size="13" fill="#666" text-anchor="middle">코딩 없이 AI가 매매하는 자동매매 플랫폼</text>
+  <rect x="380" y="390" width="160" height="36" fill="#1a1a1a"/>
+  <text x="460" y="412" font-size="12" fill="#fff" text-anchor="middle" font-weight="600">무료로 시작하기 →</text>
+
+  <!-- Feature blocks -->
+  <rect x="100" y="470" width="220" height="120" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="210" y="510" font-size="14" font-weight="600" fill="#1a1a1a" text-anchor="middle">🧠 GPT 전략 생성</text>
+  <text x="210" y="535" font-size="10" fill="#666" text-anchor="middle">자연어로 전략 만들기</text>
+
+  <rect x="350" y="470" width="220" height="120" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="460" y="510" font-size="14" font-weight="600" fill="#1a1a1a" text-anchor="middle">🔒 비수탁형 자산</text>
+  <text x="460" y="535" font-size="10" fill="#666" text-anchor="middle">자산은 거래소 그대로</text>
+
+  <rect x="600" y="470" width="220" height="120" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="710" y="510" font-size="14" font-weight="600" fill="#1a1a1a" text-anchor="middle">📈 강화학습 적응</text>
+  <text x="710" y="535" font-size="10" fill="#666" text-anchor="middle">시장 변동성 자동 대응</text>
+
+  <!-- Footer area -->
+  <line x1="60" y1="660" x2="860" y2="660" stroke="#1a1a1a" stroke-width="0.5"/>
+  <text x="80" y="685" font-size="9" fill="#666">© 2025 OpenAI Trading System</text>
+
+  <!-- Annotations W1 -->
+  <g transform="translate(900, 210)">
+    <text x="0" y="20" font-size="11" fill="#1a1a1a" font-weight="600">📌 핵심 요소</text>
+    <text x="0" y="45" font-size="11" fill="#333">• 1초 내 가치 제안 인지</text>
+    <text x="0" y="65" font-size="11" fill="#333">• 3-feature 카드 (좌→우 우선순위)</text>
+    <text x="0" y="85" font-size="11" fill="#333">• 단일 CTA "무료로 시작하기"</text>
+
+    <text x="0" y="125" font-size="11" fill="#1a1a1a" font-weight="600">⚠️ 검토 포인트</text>
+    <text x="0" y="150" font-size="11" fill="#333">• Hero 영역에 데모 영상 자리</text>
+    <text x="0" y="170" font-size="11" fill="#333">  필요 → 다음 버전 반영</text>
+    <text x="0" y="190" font-size="11" fill="#333">• 사회적 증명(사용자 수, 후기)</text>
+    <text x="0" y="210" font-size="11" fill="#333">  현 와이어프레임에 누락</text>
+
+    <text x="0" y="250" font-size="11" fill="#1a1a1a" font-weight="600">🔗 IA 연결</text>
+    <text x="0" y="275" font-size="11" fill="#333">1.1.1 Hero · 1.1.2 요금제</text>
+    <text x="0" y="295" font-size="11" fill="#333">→ 1.2 회원가입</text>
+
+    <text x="0" y="335" font-size="11" fill="#1a1a1a" font-weight="600">📐 정보 위계</text>
+    <text x="0" y="360" font-size="11" fill="#333">Logo → Headline → CTA →</text>
+    <text x="0" y="380" font-size="11" fill="#333">Features → Footer</text>
+  </g>
+
+  <!-- ====== Screen 2: 대시보드 ====== -->
+  <text x="60" y="780" font-size="11" fill="#666" font-family="'Noto Sans CJK KR', monospace">W2 / DASHBOARD</text>
+  <text x="60" y="806" font-size="18" font-weight="600" fill="#1a1a1a">2. 대시보드 (홈)</text>
+
+  <rect x="60" y="830" width="800" height="500" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Sidebar -->
+  <rect x="60" y="830" width="140" height="500" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+  <rect x="75" y="845" width="60" height="20" fill="#1a1a1a"/>
+  <text x="105" y="860" font-size="10" fill="#fff" text-anchor="middle" font-weight="600">LOGO</text>
+
+  <rect x="75" y="880" width="110" height="26" fill="#1a1a1a"/>
+  <text x="130" y="897" font-size="10" fill="#fff" font-weight="600">📊 대시보드</text>
+  <text x="85" y="930" font-size="10" fill="#666">🧠 전략</text>
+  <text x="85" y="955" font-size="10" fill="#666">📈 거래내역</text>
+  <text x="85" y="980" font-size="10" fill="#666">🔗 거래소</text>
+  <text x="85" y="1005" font-size="10" fill="#666">⚙️ 설정</text>
+  <text x="85" y="1030" font-size="10" fill="#666">💬 지원</text>
+
+  <!-- Top bar -->
+  <line x1="200" y1="880" x2="860" y2="880" stroke="#1a1a1a" stroke-width="0.5"/>
+  <text x="220" y="865" font-size="13" font-weight="600" fill="#1a1a1a">안녕하세요, 박서연 님</text>
+  <circle cx="830" cy="858" r="12" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+
+  <!-- Asset widget -->
+  <rect x="220" y="900" width="300" height="110" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="235" y="922" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">TOTAL ASSETS</text>
+  <text x="235" y="952" font-size="22" font-weight="700" fill="#1a1a1a">₩ 12,450,000</text>
+  <text x="235" y="975" font-size="11" fill="#1a1a1a">▲ +5.4% (₩640,000)</text>
+  <line x1="235" y1="985" x2="505" y2="985" stroke="#1a1a1a" stroke-width="0.3"/>
+  <text x="235" y="1000" font-size="9" fill="#666">업비트 · 바이낸스 통합</text>
+
+  <!-- Strategy summary -->
+  <rect x="540" y="900" width="300" height="110" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="555" y="922" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">ACTIVE STRATEGIES</text>
+  <text x="555" y="952" font-size="22" font-weight="700" fill="#1a1a1a">3 / 5</text>
+  <line x1="555" y1="970" x2="825" y2="970" stroke="#1a1a1a" stroke-width="0.3"/>
+  <text x="555" y="990" font-size="10" fill="#1a1a1a">• BTC 분할매수  [ON]</text>
+  <text x="555" y="1005" font-size="10" fill="#1a1a1a">• ETH 모멘텀  [ON]</text>
+
+  <!-- Chart -->
+  <rect x="220" y="1030" width="620" height="160" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="235" y="1052" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">PORTFOLIO PERFORMANCE / 30D</text>
+  <polyline points="245,1170 290,1160 335,1150 380,1135 425,1140 470,1120 515,1100 560,1090 605,1075 650,1060 695,1050 740,1035 785,1020 825,1010" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="235" y1="1180" x2="830" y2="1180" stroke="#1a1a1a" stroke-width="0.3"/>
+
+  <!-- Alert feed -->
+  <rect x="220" y="1210" width="620" height="100" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="235" y="1232" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">RECENT ALERTS</text>
+  <text x="235" y="1255" font-size="10" fill="#1a1a1a">• [12:34] BTC 매수 체결 — ₩45,200 × 0.01 BTC</text>
+  <text x="235" y="1275" font-size="10" fill="#1a1a1a">• [11:02] 전략 'BTC 분할매수' 트리거 발동</text>
+  <text x="235" y="1295" font-size="10" fill="#666">• [09:15] 강화학습 엔진 변동성↑ 감지 → 포지션 축소</text>
+
+  <!-- Annotations W2 -->
+  <g transform="translate(900, 830)">
+    <text x="0" y="20" font-size="11" fill="#1a1a1a" font-weight="600">📌 핵심 요소</text>
+    <text x="0" y="45" font-size="11" fill="#333">• 좌측 사이드바: 빈도순 메뉴</text>
+    <text x="0" y="65" font-size="11" fill="#333">• 상단: 총 자산 + 활성 전략</text>
+    <text x="0" y="85" font-size="11" fill="#333">• 중앙: 차트 (30일 성과)</text>
+    <text x="0" y="105" font-size="11" fill="#333">• 하단: 실시간 알림 피드</text>
+
+    <text x="0" y="145" font-size="11" fill="#1a1a1a" font-weight="600">⚠️ 검토 포인트</text>
+    <text x="0" y="170" font-size="11" fill="#333">• 사이드바 아이콘에 라벨 동시</text>
+    <text x="0" y="190" font-size="11" fill="#333">  표시 (접근성 ↑)</text>
+    <text x="0" y="210" font-size="11" fill="#333">• 차트 옆 KPI(MDD, 승률) 노출</text>
+    <text x="0" y="230" font-size="11" fill="#333">  필요</text>
+
+    <text x="0" y="270" font-size="11" fill="#1a1a1a" font-weight="600">🔗 IA 연결</text>
+    <text x="0" y="295" font-size="11" fill="#333">2.1.1 자산 · 2.1.2 전략</text>
+    <text x="0" y="315" font-size="11" fill="#333">2.1.3 알림 피드</text>
+
+    <text x="0" y="355" font-size="11" fill="#1a1a1a" font-weight="600">📐 정보 위계</text>
+    <text x="0" y="380" font-size="11" fill="#333">자산 → 전략 → 성과 → 알림</text>
+    <text x="0" y="400" font-size="11" fill="#333">(중요도 내림차순 배치)</text>
+  </g>
+
+  <!-- ====== Screen 3: GPT 전략 생성 ====== -->
+  <text x="60" y="1400" font-size="11" fill="#666" font-family="'Noto Sans CJK KR', monospace">W3 / GPT STRATEGY</text>
+  <text x="60" y="1426" font-size="18" font-weight="600" fill="#1a1a1a">3. GPT 전략 생성 + No-Code 편집기</text>
+
+  <rect x="60" y="1450" width="800" height="540" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Top bar -->
+  <line x1="60" y1="1500" x2="860" y2="1500" stroke="#1a1a1a" stroke-width="0.5"/>
+  <text x="80" y="1485" font-size="11" fill="#666">← 전략 라이브러리</text>
+  <text x="460" y="1485" font-size="13" font-weight="600" fill="#1a1a1a" text-anchor="middle">새 전략 만들기</text>
+  <rect x="780" y="1473" width="60" height="22" fill="#1a1a1a"/>
+  <text x="810" y="1487" font-size="10" fill="#fff" text-anchor="middle">저장</text>
+
+  <!-- Left: Chat -->
+  <rect x="80" y="1520" width="370" height="450" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="95" y="1540" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">CHAT WITH GPT</text>
+
+  <rect x="95" y="1555" width="280" height="50" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="105" y="1573" font-size="10" fill="#1a1a1a">GPT: 안녕하세요! 어떤 전략을</text>
+  <text x="105" y="1590" font-size="10" fill="#1a1a1a">만들고 싶으신가요?</text>
+
+  <rect x="155" y="1620" width="280" height="50" fill="#1a1a1a"/>
+  <text x="165" y="1640" font-size="10" fill="#fff" font-style="italic">"BTC 5% 떨어지면 분할매수</text>
+  <text x="165" y="1657" font-size="10" fill="#fff" font-style="italic">해주는 전략 만들어줘"</text>
+
+  <rect x="95" y="1685" width="320" height="80" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="105" y="1703" font-size="10" fill="#1a1a1a">GPT: 좋아요! 다음 전략을</text>
+  <text x="105" y="1720" font-size="10" fill="#1a1a1a">제안합니다:</text>
+  <text x="105" y="1740" font-size="10" fill="#666">• 트리거: -5% 하락 시</text>
+  <text x="105" y="1755" font-size="10" fill="#666">• 액션: 3분할 매수</text>
+
+  <!-- Chat input -->
+  <rect x="95" y="1920" width="320" height="32" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="105" y="1940" font-size="10" fill="#666">메시지 입력...</text>
+  <rect x="385" y="1920" width="48" height="32" fill="#1a1a1a"/>
+  <text x="409" y="1940" font-size="10" fill="#fff" text-anchor="middle">전송</text>
+
+  <!-- Right: Block editor -->
+  <rect x="465" y="1520" width="380" height="450" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="480" y="1540" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">NO-CODE BLOCK EDITOR</text>
+
+  <!-- Block 1: Trigger -->
+  <rect x="480" y="1560" width="350" height="60" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="480" y="1560" width="60" height="60" fill="#1a1a1a"/>
+  <text x="510" y="1593" font-size="10" fill="#fff" text-anchor="middle" font-weight="600">트리거</text>
+  <text x="555" y="1583" font-size="11" font-weight="600" fill="#1a1a1a">가격 변동 조건</text>
+  <text x="555" y="1605" font-size="10" fill="#666">BTC ─5% (24h)</text>
+
+  <!-- Arrow -->
+  <text x="655" y="1640" font-size="14" fill="#666" text-anchor="middle">↓</text>
+
+  <!-- Block 2: Action -->
+  <rect x="480" y="1650" width="350" height="60" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="480" y="1650" width="60" height="60" fill="#1a1a1a"/>
+  <text x="510" y="1683" font-size="10" fill="#fff" text-anchor="middle" font-weight="600">액션</text>
+  <text x="555" y="1673" font-size="11" font-weight="600" fill="#1a1a1a">3분할 매수</text>
+  <text x="555" y="1695" font-size="10" fill="#666">자본 30% / 분할 간격 2h</text>
+
+  <text x="655" y="1730" font-size="14" fill="#666" text-anchor="middle">↓</text>
+
+  <!-- Block 3: Stop loss -->
+  <rect x="480" y="1740" width="350" height="60" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="480" y="1740" width="60" height="60" fill="#1a1a1a"/>
+  <text x="510" y="1773" font-size="10" fill="#fff" text-anchor="middle" font-weight="600">손절</text>
+  <text x="555" y="1763" font-size="11" font-weight="600" fill="#1a1a1a">손실 -3% 시 정리</text>
+  <text x="555" y="1785" font-size="10" fill="#666">전체 포지션 매도</text>
+
+  <!-- Add block button -->
+  <rect x="480" y="1820" width="350" height="36" fill="none" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="4 2"/>
+  <text x="655" y="1842" font-size="11" fill="#666" text-anchor="middle">+ 블록 추가</text>
+
+  <!-- Backtest button -->
+  <rect x="480" y="1900" width="350" height="40" fill="#1a1a1a"/>
+  <text x="655" y="1925" font-size="12" fill="#fff" text-anchor="middle" font-weight="600">▶ 백테스팅 실행</text>
+
+  <!-- Annotations W3 -->
+  <g transform="translate(900, 1450)">
+    <text x="0" y="20" font-size="11" fill="#1a1a1a" font-weight="600">📌 핵심 요소</text>
+    <text x="0" y="45" font-size="11" fill="#333">• 좌: GPT 채팅 (자연어 입력)</text>
+    <text x="0" y="65" font-size="11" fill="#333">• 우: 시각적 블록 편집기</text>
+    <text x="0" y="85" font-size="11" fill="#333">• 양방향 동기화 (채팅→블록)</text>
+    <text x="0" y="105" font-size="11" fill="#333">• Trigger·Action·StopLoss 3블록</text>
+
+    <text x="0" y="145" font-size="11" fill="#1a1a1a" font-weight="600">⚠️ 검토 포인트</text>
+    <text x="0" y="170" font-size="11" fill="#333">• 블록 간 드래그 순서 변경</text>
+    <text x="0" y="190" font-size="11" fill="#333">  UX 명시 필요</text>
+    <text x="0" y="210" font-size="11" fill="#333">• 백테스팅 전 검증 단계 (빈</text>
+    <text x="0" y="230" font-size="11" fill="#333">  블록 알림) 추가 권장</text>
+    <text x="0" y="250" font-size="11" fill="#333">• GPT 응답 로딩 인디케이터</text>
+    <text x="0" y="270" font-size="11" fill="#333">  스피너 누락</text>
+
+    <text x="0" y="310" font-size="11" fill="#1a1a1a" font-weight="600">🔗 IA 연결</text>
+    <text x="0" y="335" font-size="11" fill="#333">4.2.1 자연어 · 4.2.2 추천</text>
+    <text x="0" y="355" font-size="11" fill="#333">4.2.3 블록 편집</text>
+
+    <text x="0" y="395" font-size="11" fill="#1a1a1a" font-weight="600">📐 명세서 ID</text>
+    <text x="0" y="420" font-size="11" fill="#333">F-04-01 ~ F-04-04</text>
+    <text x="0" y="440" font-size="11" fill="#333">(Mission 05 참조)</text>
+
+    <text x="0" y="480" font-size="11" fill="#1a1a1a" font-weight="600">🔁 플로우 연결</text>
+    <text x="0" y="505" font-size="11" fill="#333">Flow 1 — Step 8~10</text>
+    <text x="0" y="525" font-size="11" fill="#333">(GPT 입력 → 만족? → 편집)</text>
+  </g>
+
+  <!-- ====== Screen 4: 백테스팅 결과 ====== -->
+  <text x="60" y="2060" font-size="11" fill="#666" font-family="'Noto Sans CJK KR', monospace">W4 / BACKTEST RESULT</text>
+  <text x="60" y="2086" font-size="18" font-weight="600" fill="#1a1a1a">4. 백테스팅 결과 리포트</text>
+
+  <rect x="60" y="2110" width="800" height="480" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+
+  <line x1="60" y1="2160" x2="860" y2="2160" stroke="#1a1a1a" stroke-width="0.5"/>
+  <text x="80" y="2145" font-size="11" fill="#666">← 전략 편집</text>
+  <text x="460" y="2145" font-size="13" font-weight="600" fill="#1a1a1a" text-anchor="middle">백테스팅 결과: BTC 분할매수 v1</text>
+  <rect x="780" y="2133" width="60" height="22" fill="#1a1a1a"/>
+  <text x="810" y="2147" font-size="10" fill="#fff" text-anchor="middle">배포 →</text>
+
+  <!-- KPI cards -->
+  <rect x="80" y="2180" width="180" height="80" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="95" y="2200" font-size="9" fill="#666" font-family="'Noto Sans CJK KR', monospace">TOTAL RETURN</text>
+  <text x="95" y="2230" font-size="22" font-weight="700" fill="#1a1a1a">+24.7%</text>
+  <text x="95" y="2250" font-size="9" fill="#666">최근 90일</text>
+
+  <rect x="270" y="2180" width="180" height="80" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="285" y="2200" font-size="9" fill="#666" font-family="'Noto Sans CJK KR', monospace">WIN RATE</text>
+  <text x="285" y="2230" font-size="22" font-weight="700" fill="#1a1a1a">68%</text>
+  <text x="285" y="2250" font-size="9" fill="#666">42승 20패</text>
+
+  <rect x="460" y="2180" width="180" height="80" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="475" y="2200" font-size="9" fill="#666" font-family="'Noto Sans CJK KR', monospace">MAX DRAWDOWN</text>
+  <text x="475" y="2230" font-size="22" font-weight="700" fill="#1a1a1a">-8.2%</text>
+  <text x="475" y="2250" font-size="9" fill="#666">최대 손실</text>
+
+  <rect x="650" y="2180" width="180" height="80" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="665" y="2200" font-size="9" fill="#666" font-family="'Noto Sans CJK KR', monospace">SHARPE RATIO</text>
+  <text x="665" y="2230" font-size="22" font-weight="700" fill="#1a1a1a">1.84</text>
+  <text x="665" y="2250" font-size="9" fill="#666">위험 조정 수익</text>
+
+  <!-- Chart area -->
+  <rect x="80" y="2280" width="760" height="200" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="95" y="2300" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">EQUITY CURVE</text>
+
+  <line x1="95" y1="2460" x2="825" y2="2460" stroke="#1a1a1a" stroke-width="0.5"/>
+  <line x1="95" y1="2320" x2="95" y2="2460" stroke="#1a1a1a" stroke-width="0.5"/>
+
+  <polyline points="100,2440 150,2435 200,2425 250,2415 300,2400 350,2385 400,2395 450,2370 500,2345 550,2330 600,2310 650,2325 700,2305 750,2290 800,2275 820,2270" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+
+  <text x="100" y="2475" font-size="8" fill="#666">90D ago</text>
+  <text x="820" y="2475" font-size="8" fill="#666" text-anchor="end">Today</text>
+
+  <!-- Buttons -->
+  <rect x="80" y="2510" width="160" height="36" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="160" y="2532" font-size="11" fill="#1a1a1a" text-anchor="middle">전략 수정</text>
+
+  <rect x="260" y="2510" width="160" height="36" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="340" y="2532" font-size="11" fill="#1a1a1a" text-anchor="middle">CSV 다운로드</text>
+
+  <rect x="640" y="2510" width="200" height="36" fill="#1a1a1a"/>
+  <text x="740" y="2532" font-size="11" fill="#fff" text-anchor="middle" font-weight="600">실거래 배포 →</text>
+
+  <!-- Annotations W4 -->
+  <g transform="translate(900, 2110)">
+    <text x="0" y="20" font-size="11" fill="#1a1a1a" font-weight="600">📌 핵심 요소</text>
+    <text x="0" y="45" font-size="11" fill="#333">• 4개 핵심 KPI 카드</text>
+    <text x="0" y="65" font-size="11" fill="#333">  Return / Win / MDD / Sharpe</text>
+    <text x="0" y="85" font-size="11" fill="#333">• Equity curve 시각화</text>
+    <text x="0" y="105" font-size="11" fill="#333">• 3-CTA: 수정 / 다운로드 / 배포</text>
+
+    <text x="0" y="145" font-size="11" fill="#1a1a1a" font-weight="600">⚠️ 검토 포인트</text>
+    <text x="0" y="170" font-size="11" fill="#333">• 시장 대비 비교 (BTC 단순보유)</text>
+    <text x="0" y="190" font-size="11" fill="#333">  벤치마크 라인 추가 필요</text>
+    <text x="0" y="210" font-size="11" fill="#333">• MDD가 낮을 때 안내 문구</text>
+    <text x="0" y="230" font-size="11" fill="#333">  ("시장보다 안정적" 등)</text>
+
+    <text x="0" y="270" font-size="11" fill="#1a1a1a" font-weight="600">🔗 IA 연결</text>
+    <text x="0" y="295" font-size="11" fill="#333">4.3.2 백테스팅 결과</text>
+
+    <text x="0" y="335" font-size="11" fill="#1a1a1a" font-weight="600">📐 정보 위계</text>
+    <text x="0" y="360" font-size="11" fill="#333">KPI → 차트 → 액션 (3단)</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="60" y1="2640" x2="1740" y2="2640" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="60" y="2665" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">WIREFRAMES · 4 SCREENS · 추가 2개 (W5: API 연동 / W6: 예외 화면) 별도 페이지</text>
+  <text x="1740" y="2665" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">작성자: 이제혁 / PBL WK06</text>
+
+</svg>
