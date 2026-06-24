@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1200" width="1800" height="1200" font-family="'Noto Sans CJK KR', sans-serif">
+
+  <rect width="1800" height="1200" fill="#fafaf7"/>
+
+  <!-- HEADER -->
+  <text x="60" y="60" font-size="11" fill="#666" letter-spacing="1.5" font-family="'Noto Sans CJK KR', monospace">MISSION 08 / UX TEST RESULTS</text>
+  <text x="60" y="92" font-size="26" font-weight="600" fill="#1a1a1a" letter-spacing="-0.5">UX 테스트 결과 대시보드</text>
+  <text x="1740" y="60" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">3 PARTICIPANTS · 6 TASKS</text>
+  <text x="1740" y="76" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">작성자: 이제혁</text>
+  <line x1="60" y1="115" x2="1740" y2="115" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- ============ 1. 태스크별 완료율 ============ -->
+  <text x="60" y="160" font-size="11" fill="#666" font-family="'Noto Sans CJK KR', monospace">CHART 01 / TASK COMPLETION RATE</text>
+  <text x="60" y="186" font-size="18" font-weight="600" fill="#1a1a1a">1. 태스크별 완료율</text>
+
+  <g transform="translate(60, 210)">
+    <rect width="820" height="320" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+
+    <!-- Y axis -->
+    <line x1="80" y1="40" x2="80" y2="270" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="65" y="45" font-size="9" fill="#666" text-anchor="end">100%</text>
+    <line x1="78" y1="40" x2="800" y2="40" stroke="#ccc" stroke-width="0.5"/>
+    <text x="65" y="100" font-size="9" fill="#666" text-anchor="end">75%</text>
+    <line x1="78" y1="97" x2="800" y2="97" stroke="#ccc" stroke-width="0.5"/>
+    <text x="65" y="155" font-size="9" fill="#666" text-anchor="end">50%</text>
+    <line x1="78" y1="155" x2="800" y2="155" stroke="#ccc" stroke-width="0.5"/>
+    <text x="65" y="215" font-size="9" fill="#666" text-anchor="end">25%</text>
+    <line x1="78" y1="212" x2="800" y2="212" stroke="#ccc" stroke-width="0.5"/>
+    <text x="65" y="273" font-size="9" fill="#666" text-anchor="end">0%</text>
+
+    <!-- X axis (tasks) -->
+    <line x1="80" y1="270" x2="800" y2="270" stroke="#1a1a1a" stroke-width="1"/>
+
+    <!-- T1: 100% -->
+    <rect x="110" y="40" width="80" height="230" fill="#1a1a1a"/>
+    <text x="150" y="30" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="700">100%</text>
+    <text x="150" y="288" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="600">T1</text>
+    <text x="150" y="302" font-size="8" fill="#666" text-anchor="middle">가입+연동</text>
+
+    <!-- T2: 100% -->
+    <rect x="220" y="40" width="80" height="230" fill="#1a1a1a"/>
+    <text x="260" y="30" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="700">100%</text>
+    <text x="260" y="288" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="600">T2</text>
+    <text x="260" y="302" font-size="8" fill="#666" text-anchor="middle">GPT 전략</text>
+
+    <!-- T3: 66% -->
+    <rect x="330" y="117" width="80" height="153" fill="#1a1a1a" fill-opacity="0.5"/>
+    <text x="370" y="107" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="700">66%</text>
+    <text x="370" y="288" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="600">T3 ⚠️</text>
+    <text x="370" y="302" font-size="8" fill="#666" text-anchor="middle">블록 편집</text>
+
+    <!-- T4: 100% -->
+    <rect x="440" y="40" width="80" height="230" fill="#1a1a1a"/>
+    <text x="480" y="30" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="700">100%</text>
+    <text x="480" y="288" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="600">T4</text>
+    <text x="480" y="302" font-size="8" fill="#666" text-anchor="middle">백테스팅</text>
+
+    <!-- T5: 100% -->
+    <rect x="550" y="40" width="80" height="230" fill="#1a1a1a"/>
+    <text x="590" y="30" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="700">100%</text>
+    <text x="590" y="288" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="600">T5</text>
+    <text x="590" y="302" font-size="8" fill="#666" text-anchor="middle">오류 대응</text>
+
+    <!-- T6: 33% -->
+    <rect x="660" y="194" width="80" height="76" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="700" y="184" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="700">33%</text>
+    <text x="700" y="288" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="600">T6 ❌</text>
+    <text x="700" y="302" font-size="8" fill="#666" text-anchor="middle">자산위치</text>
+  </g>
+
+  <!-- ============ 2. 참가자별 평균 소요 시간 ============ -->
+  <text x="920" y="160" font-size="11" fill="#666" font-family="'Noto Sans CJK KR', monospace">CHART 02 / AVG TIME PER PARTICIPANT</text>
+  <text x="920" y="186" font-size="18" font-weight="600" fill="#1a1a1a">2. 참가자별 평균 소요 시간 (초)</text>
+
+  <g transform="translate(920, 210)">
+    <rect width="820" height="320" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+
+    <!-- Y axis -->
+    <line x1="80" y1="40" x2="80" y2="270" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="65" y="45" font-size="9" fill="#666" text-anchor="end">90s</text>
+    <line x1="78" y1="40" x2="800" y2="40" stroke="#ccc" stroke-width="0.5"/>
+    <text x="65" y="118" font-size="9" fill="#666" text-anchor="end">60s</text>
+    <line x1="78" y1="115" x2="800" y2="115" stroke="#ccc" stroke-width="0.5"/>
+    <text x="65" y="195" font-size="9" fill="#666" text-anchor="end">30s</text>
+    <line x1="78" y1="192" x2="800" y2="192" stroke="#ccc" stroke-width="0.5"/>
+    <text x="65" y="273" font-size="9" fill="#666" text-anchor="end">0s</text>
+
+    <line x1="80" y1="270" x2="800" y2="270" stroke="#1a1a1a" stroke-width="1"/>
+
+    <!-- Legend -->
+    <rect x="600" y="50" width="12" height="12" fill="#1a1a1a"/>
+    <text x="618" y="60" font-size="10" fill="#1a1a1a">P1 (코인 1년)</text>
+    <rect x="600" y="68" width="12" height="12" fill="#1a1a1a" fill-opacity="0.5"/>
+    <text x="618" y="78" font-size="10" fill="#1a1a1a">P2 (코인 2년)</text>
+    <rect x="600" y="86" width="12" height="12" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+    <text x="618" y="96" font-size="10" fill="#1a1a1a">P3 (초보)</text>
+
+    <!-- Bar groups per task (T1~T6) -->
+    <g>
+      <!-- T1: P1=22s, P2=18s, P3=45s -->
+      <rect x="100" y="213" width="18" height="57" fill="#1a1a1a"/>
+      <rect x="120" y="223" width="18" height="47" fill="#1a1a1a" fill-opacity="0.5"/>
+      <rect x="140" y="153" width="18" height="117" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+      <text x="130" y="285" font-size="9" fill="#666" text-anchor="middle">T1</text>
+    </g>
+    <g>
+      <!-- T2: P1=38s, P2=32s, P3=68s -->
+      <rect x="210" y="172" width="18" height="98" fill="#1a1a1a"/>
+      <rect x="230" y="187" width="18" height="83" fill="#1a1a1a" fill-opacity="0.5"/>
+      <rect x="250" y="93" width="18" height="177" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+      <text x="240" y="285" font-size="9" fill="#666" text-anchor="middle">T2</text>
+    </g>
+    <g>
+      <!-- T3: P1=72s, P2=58s, P3=120s (P3 fail) -->
+      <rect x="320" y="83" width="18" height="187" fill="#1a1a1a"/>
+      <rect x="340" y="120" width="18" height="150" fill="#1a1a1a" fill-opacity="0.5"/>
+      <rect x="360" y="40" width="18" height="230" fill="#fff" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="2 1"/>
+      <text x="350" y="285" font-size="9" fill="#666" text-anchor="middle">T3</text>
+    </g>
+    <g>
+      <!-- T4: P1=24s, P2=20s, P3=38s -->
+      <rect x="430" y="208" width="18" height="62" fill="#1a1a1a"/>
+      <rect x="450" y="218" width="18" height="52" fill="#1a1a1a" fill-opacity="0.5"/>
+      <rect x="470" y="172" width="18" height="98" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+      <text x="460" y="285" font-size="9" fill="#666" text-anchor="middle">T4</text>
+    </g>
+    <g>
+      <!-- T5: P1=8s, P2=10s, P3=15s -->
+      <rect x="540" y="250" width="18" height="20" fill="#1a1a1a"/>
+      <rect x="560" y="245" width="18" height="25" fill="#1a1a1a" fill-opacity="0.5"/>
+      <rect x="580" y="232" width="18" height="38" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+      <text x="570" y="285" font-size="9" fill="#666" text-anchor="middle">T5</text>
+    </g>
+    <g>
+      <!-- T6: P1=22s, P2=30s(fail), P3=60s(fail) -->
+      <rect x="660" y="213" width="18" height="57" fill="#1a1a1a"/>
+      <rect x="680" y="192" width="18" height="78" fill="#fff" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="2 1"/>
+      <rect x="700" y="115" width="18" height="155" fill="#fff" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="2 1"/>
+      <text x="690" y="285" font-size="9" fill="#666" text-anchor="middle">T6</text>
+    </g>
+
+    <text x="450" y="310" font-size="8" fill="#666" text-anchor="middle">점선 테두리 = 태스크 실패</text>
+  </g>
+
+  <!-- ============ 3. 멈춤 지점 히트맵 ============ -->
+  <text x="60" y="580" font-size="11" fill="#666" font-family="'Noto Sans CJK KR', monospace">CHART 03 / HESITATION HEATMAP</text>
+  <text x="60" y="606" font-size="18" font-weight="600" fill="#1a1a1a">3. 화면별 멈춤 지점 (3초 이상 정지 횟수)</text>
+
+  <g transform="translate(60, 630)">
+    <rect width="1680" height="200" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+
+    <!-- Header row -->
+    <text x="20" y="30" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">SCREEN</text>
+    <text x="320" y="30" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">P1</text>
+    <text x="430" y="30" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">P2</text>
+    <text x="540" y="30" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">P3</text>
+    <text x="650" y="30" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">총 멈춤 시간</text>
+    <text x="900" y="30" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">주요 멈춤 원인</text>
+    <line x1="20" y1="40" x2="1660" y2="40" stroke="#1a1a1a" stroke-width="0.5"/>
+
+    <!-- Rows -->
+    <text x="20" y="60" font-size="11" fill="#1a1a1a" font-weight="500">W1 랜딩</text>
+    <rect x="310" y="48" width="40" height="16" fill="#fff" stroke="#1a1a1a"/>
+    <text x="330" y="60" font-size="10" fill="#1a1a1a" text-anchor="middle">0</text>
+    <rect x="420" y="48" width="40" height="16" fill="#fff" stroke="#1a1a1a"/>
+    <text x="440" y="60" font-size="10" fill="#1a1a1a" text-anchor="middle">0</text>
+    <rect x="530" y="48" width="40" height="16" fill="#1a1a1a" fill-opacity="0.15" stroke="#1a1a1a"/>
+    <text x="550" y="60" font-size="10" fill="#1a1a1a" text-anchor="middle">1</text>
+    <text x="660" y="60" font-size="10" fill="#666">4초</text>
+    <text x="900" y="60" font-size="10" fill="#1a1a1a">CTA 위치 탐색 (P3)</text>
+
+    <text x="20" y="85" font-size="11" fill="#1a1a1a" font-weight="500">W5 API 연동</text>
+    <rect x="310" y="73" width="40" height="16" fill="#1a1a1a" fill-opacity="0.15" stroke="#1a1a1a"/>
+    <text x="330" y="85" font-size="10" fill="#1a1a1a" text-anchor="middle">1</text>
+    <rect x="420" y="73" width="40" height="16" fill="#1a1a1a" fill-opacity="0.3" stroke="#1a1a1a"/>
+    <text x="440" y="85" font-size="10" fill="#1a1a1a" text-anchor="middle">2</text>
+    <rect x="530" y="73" width="40" height="16" fill="#1a1a1a" fill-opacity="0.6" stroke="#1a1a1a"/>
+    <text x="550" y="85" font-size="10" fill="#fff" text-anchor="middle">3</text>
+    <text x="660" y="85" font-size="10" fill="#666">38초</text>
+    <text x="900" y="85" font-size="10" fill="#1a1a1a">"권한 검증" 클릭 전 안내 박스 정독</text>
+
+    <text x="20" y="110" font-size="11" fill="#1a1a1a" font-weight="500">W3 GPT 전략 ★</text>
+    <rect x="310" y="98" width="40" height="16" fill="#1a1a1a" fill-opacity="0.3" stroke="#1a1a1a"/>
+    <text x="330" y="110" font-size="10" fill="#1a1a1a" text-anchor="middle">2</text>
+    <rect x="420" y="98" width="40" height="16" fill="#1a1a1a" fill-opacity="0.45" stroke="#1a1a1a"/>
+    <text x="440" y="110" font-size="10" fill="#fff" text-anchor="middle">3</text>
+    <rect x="530" y="98" width="40" height="16" fill="#1a1a1a" fill-opacity="0.85" stroke="#1a1a1a"/>
+    <text x="550" y="110" font-size="10" fill="#fff" text-anchor="middle">5</text>
+    <text x="660" y="110" font-size="10" fill="#666">52초</text>
+    <text x="900" y="110" font-size="10" fill="#1a1a1a">블록 편집 진입 방법 모호 / GPT 응답 대기 (로딩 없음)</text>
+
+    <text x="20" y="135" font-size="11" fill="#1a1a1a" font-weight="500">W4 백테스팅</text>
+    <rect x="310" y="123" width="40" height="16" fill="#fff" stroke="#1a1a1a"/>
+    <text x="330" y="135" font-size="10" fill="#1a1a1a" text-anchor="middle">0</text>
+    <rect x="420" y="123" width="40" height="16" fill="#1a1a1a" fill-opacity="0.15" stroke="#1a1a1a"/>
+    <text x="440" y="135" font-size="10" fill="#1a1a1a" text-anchor="middle">1</text>
+    <rect x="530" y="123" width="40" height="16" fill="#1a1a1a" fill-opacity="0.45" stroke="#1a1a1a"/>
+    <text x="550" y="135" font-size="10" fill="#fff" text-anchor="middle">3</text>
+    <text x="660" y="135" font-size="10" fill="#666">22초</text>
+    <text x="900" y="135" font-size="10" fill="#1a1a1a">MDD·Sharpe 용어 이해 (P3 "이게 좋은 수치인가요?")</text>
+
+    <text x="20" y="160" font-size="11" fill="#1a1a1a" font-weight="500">W2 대시보드 (T6)</text>
+    <rect x="310" y="148" width="40" height="16" fill="#1a1a1a" fill-opacity="0.3" stroke="#1a1a1a"/>
+    <text x="330" y="160" font-size="10" fill="#1a1a1a" text-anchor="middle">2</text>
+    <rect x="420" y="148" width="40" height="16" fill="#1a1a1a" fill-opacity="0.45" stroke="#1a1a1a"/>
+    <text x="440" y="160" font-size="10" fill="#fff" text-anchor="middle">3</text>
+    <rect x="530" y="148" width="40" height="16" fill="#1a1a1a" fill-opacity="0.6" stroke="#1a1a1a"/>
+    <text x="550" y="160" font-size="10" fill="#fff" text-anchor="middle">4</text>
+    <text x="660" y="160" font-size="10" fill="#666">45초</text>
+    <text x="900" y="160" font-size="10" fill="#1a1a1a">"자산이 어디 보관되는지" 정보 못 찾음 ★ Critical</text>
+
+    <text x="20" y="185" font-size="11" fill="#1a1a1a" font-weight="500">W6 예외 화면</text>
+    <rect x="310" y="173" width="40" height="16" fill="#fff" stroke="#1a1a1a"/>
+    <text x="330" y="185" font-size="10" fill="#1a1a1a" text-anchor="middle">0</text>
+    <rect x="420" y="173" width="40" height="16" fill="#fff" stroke="#1a1a1a"/>
+    <text x="440" y="185" font-size="10" fill="#1a1a1a" text-anchor="middle">0</text>
+    <rect x="530" y="173" width="40" height="16" fill="#fff" stroke="#1a1a1a"/>
+    <text x="550" y="185" font-size="10" fill="#1a1a1a" text-anchor="middle">0</text>
+    <text x="660" y="185" font-size="10" fill="#666">0초</text>
+    <text x="900" y="185" font-size="10" fill="#1a1a1a">즉시 이해 ✓ (모든 참가자가 "자동 복구 중" 명확히 인지)</text>
+  </g>
+
+  <!-- ============ 4. 가설 검증 결과 ============ -->
+  <text x="60" y="880" font-size="11" fill="#666" font-family="'Noto Sans CJK KR', monospace">CHART 04 / HYPOTHESIS VALIDATION</text>
+  <text x="60" y="906" font-size="18" font-weight="600" fill="#1a1a1a">4. 가설 검증 결과</text>
+
+  <g transform="translate(60, 930)">
+    <!-- H1 -->
+    <rect width="540" height="200" fill="#1a1a1a"/>
+    <text x="20" y="30" font-size="10" fill="#ccc" font-family="'Noto Sans CJK KR', monospace">H1 / 학습성</text>
+    <text x="20" y="55" font-size="14" font-weight="600" fill="#fafaf7">5분 내 첫 전략 생성 가능</text>
+    <line x1="20" y1="65" x2="520" y2="65" stroke="#666" stroke-width="0.5"/>
+    <text x="20" y="95" font-size="11" fill="#fafaf7">평균 소요 시간: <tspan font-weight="700" font-size="14">2분 18초</tspan></text>
+    <text x="20" y="118" font-size="11" fill="#fafaf7">완료율: <tspan font-weight="700" font-size="14">3/3 (100%)</tspan></text>
+    <text x="20" y="155" font-size="14" fill="#fafaf7" font-weight="700">✓ 검증 성공</text>
+    <text x="20" y="180" font-size="10" fill="#ccc">목표 5분의 절반 이하로 완료. T2(GPT 전략)에서 P3도 1분 8초</text>
+
+    <!-- H2 -->
+    <rect x="570" width="540" height="200" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="590" y="30" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">H2 / 신뢰성</text>
+    <text x="590" y="55" font-size="14" font-weight="600" fill="#1a1a1a">비수탁 안전성 인지</text>
+    <line x1="590" y1="65" x2="1090" y2="65" stroke="#1a1a1a" stroke-width="0.5"/>
+    <text x="590" y="95" font-size="11" fill="#1a1a1a">"자산 위치" 질문 정답률: <tspan font-weight="700" font-size="14">1/3 (33%)</tspan></text>
+    <text x="590" y="118" font-size="11" fill="#1a1a1a">평균 탐색 시간: <tspan font-weight="700" font-size="14">37초</tspan></text>
+    <text x="590" y="155" font-size="14" fill="#1a1a1a" font-weight="700">✗ 검증 실패</text>
+    <text x="590" y="180" font-size="10" fill="#333">와이어프레임에 비수탁성이 표현된 화면이 W5뿐. 대시보드(W2)에 명시 필요</text>
+
+    <!-- H3 -->
+    <rect x="1140" width="540" height="200" fill="#1a1a1a"/>
+    <text x="1160" y="30" font-size="10" fill="#ccc" font-family="'Noto Sans CJK KR', monospace">H3 / 안정감</text>
+    <text x="1160" y="55" font-size="14" font-weight="600" fill="#fafaf7">자동 복구로 불안 해소</text>
+    <line x1="1160" y1="65" x2="1660" y2="65" stroke="#666" stroke-width="0.5"/>
+    <text x="1160" y="95" font-size="11" fill="#fafaf7">"개입 불필요" 인지: <tspan font-weight="700" font-size="14">3/3 (100%)</tspan></text>
+    <text x="1160" y="118" font-size="11" fill="#fafaf7">W6 평균 이해 시간: <tspan font-weight="700" font-size="14">11초</tspan></text>
+    <text x="1160" y="155" font-size="14" fill="#fafaf7" font-weight="700">✓ 검증 성공</text>
+    <text x="1160" y="180" font-size="10" fill="#ccc">4-Step 트래커가 즉시 이해됨. "회의 중에도 안심" 발화 P2 기록</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="60" y1="1170" x2="1740" y2="1170" stroke="#1a1a1a" stroke-width="1"/>
+  <text x="60" y="1190" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">UX TEST · 3 PARTICIPANTS · 6 TASKS · 35분 SESSION × 3 · 행동 기반 데이터 수집</text>
+  <text x="1740" y="1190" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">작성자: 이제혁 / PBL WK08</text>
+
+</svg>
