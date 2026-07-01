@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 900" width="1800" height="900" font-family="'Noto Sans CJK KR', sans-serif">
+
+  <rect width="1800" height="900" fill="#fafaf7"/>
+
+  <!-- Header -->
+  <text x="60" y="60" font-size="11" fill="#666" letter-spacing="1.5" font-family="'Noto Sans CJK KR', monospace">BEFORE / AFTER · IMPROVEMENT 01</text>
+  <text x="60" y="92" font-size="26" font-weight="600" fill="#1a1a1a" letter-spacing="-0.5">개선안 1: 비수탁성 인지 강화 (W2 대시보드)</text>
+  <text x="1740" y="60" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">PRIORITY: P0</text>
+  <text x="1740" y="76" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">작성자: 이제혁</text>
+  <line x1="60" y1="115" x2="1740" y2="115" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Rationale strip -->
+  <g transform="translate(60, 140)">
+    <rect width="1680" height="80" fill="#1a1a1a"/>
+    <text x="20" y="28" font-size="10" fill="#ccc" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1.5">DATA-DRIVEN RATIONALE</text>
+    <text x="20" y="52" font-size="13" fill="#fafaf7">📊 T6 완료율 <tspan font-weight="700">33% (1/3)</tspan> · 김주형/강민석 정답 실패 · W2 대시보드에서 자산 위치 정보 접근 실패 (평균 45초 탐색)</text>
+    <text x="20" y="70" font-size="11" fill="#ccc">🎯 성공 목표: T6 정답률 <tspan font-weight="700">33% → 90%+</tspan> · 자산 위치 인지 시간 <tspan font-weight="700">45초 → 5초</tspan></text>
+  </g>
+
+  <!-- ============ BEFORE ============ -->
+  <text x="60" y="260" font-size="14" fill="#666" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1.5">◄ BEFORE (현재)</text>
+
+  <g transform="translate(60, 280)">
+    <rect width="820" height="560" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+
+    <!-- Sidebar -->
+    <rect x="0" y="0" width="140" height="560" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+    <rect x="15" y="15" width="60" height="20" fill="#1a1a1a"/>
+    <text x="45" y="30" font-size="10" fill="#fff" text-anchor="middle" font-weight="600">LOGO</text>
+    <rect x="15" y="50" width="110" height="26" fill="#1a1a1a"/>
+    <text x="70" y="67" font-size="10" fill="#fff" font-weight="600">📊 대시보드</text>
+    <text x="25" y="100" font-size="10" fill="#666">🧠 전략</text>
+    <text x="25" y="125" font-size="10" fill="#666">📈 거래내역</text>
+    <text x="25" y="150" font-size="10" fill="#666">🔗 거래소</text>
+    <text x="25" y="175" font-size="10" fill="#666">⚙️ 설정</text>
+
+    <!-- Top bar -->
+    <line x1="140" y1="50" x2="820" y2="50" stroke="#1a1a1a" stroke-width="0.5"/>
+    <text x="160" y="35" font-size="13" font-weight="600" fill="#1a1a1a">안녕하세요, 노경민 님</text>
+
+    <!-- Asset widget - PROBLEM AREA -->
+    <rect x="160" y="70" width="300" height="120" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="175" y="94" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">TOTAL ASSETS</text>
+    <text x="175" y="128" font-size="26" font-weight="700" fill="#1a1a1a">₩ 12,450,000</text>
+    <text x="175" y="152" font-size="11" fill="#1a1a1a">▲ +5.4% (₩640,000)</text>
+    <text x="175" y="175" font-size="9" fill="#666">업비트 · 바이낸스 통합</text>
+
+    <!-- Problem markers -->
+    <circle cx="490" cy="120" r="14" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="490" y="125" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="700">?</text>
+    <line x1="475" y1="120" x2="450" y2="120" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="3 2"/>
+
+    <text x="505" y="115" font-size="10" fill="#666" font-style="italic">"내 돈이 어디 있지?"</text>
+    <text x="505" y="130" font-size="10" fill="#666" font-style="italic">(P2/P3 답변 실패)</text>
+
+    <!-- Strategy card -->
+    <rect x="480" y="70" width="320" height="120" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="495" y="94" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">ACTIVE STRATEGIES</text>
+    <text x="495" y="128" font-size="26" font-weight="700" fill="#1a1a1a">3 / 5</text>
+    <text x="495" y="152" font-size="10" fill="#1a1a1a">• BTC 분할매수  [ON]</text>
+    <text x="495" y="170" font-size="10" fill="#1a1a1a">• ETH 모멘텀  [ON]</text>
+
+    <!-- Chart -->
+    <rect x="160" y="210" width="640" height="180" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="175" y="234" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">PORTFOLIO PERFORMANCE / 30D</text>
+    <polyline points="185,370 240,360 295,350 350,335 405,340 460,320 515,300 570,290 625,275 680,260 735,250 790,235" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+
+    <!-- Alert feed -->
+    <rect x="160" y="410" width="640" height="130" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="175" y="434" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">RECENT ALERTS</text>
+    <text x="175" y="458" font-size="10" fill="#1a1a1a">• [12:34] BTC 매수 체결 — ₩45,200 × 0.01 BTC</text>
+    <text x="175" y="478" font-size="10" fill="#1a1a1a">• [11:02] 전략 'BTC 분할매수' 트리거 발동</text>
+    <text x="175" y="498" font-size="10" fill="#666">• [09:15] 강화학습 엔진 변동성↑ 감지</text>
+  </g>
+
+  <!-- Arrow between Before/After -->
+  <g transform="translate(895, 550)">
+    <text x="0" y="10" font-size="24" fill="#1a1a1a" text-anchor="middle">→</text>
+    <text x="0" y="40" font-size="10" fill="#666" text-anchor="middle" font-family="'Noto Sans CJK KR', monospace">IMPROVE</text>
+  </g>
+
+  <!-- ============ AFTER ============ -->
+  <text x="920" y="260" font-size="14" fill="#1a1a1a" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1.5" font-weight="600">► AFTER (개선안)</text>
+
+  <g transform="translate(920, 280)">
+    <rect width="820" height="560" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+
+    <!-- Sidebar -->
+    <rect x="0" y="0" width="140" height="560" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+    <rect x="15" y="15" width="60" height="20" fill="#1a1a1a"/>
+    <text x="45" y="30" font-size="10" fill="#fff" text-anchor="middle" font-weight="600">LOGO</text>
+    <rect x="15" y="50" width="110" height="26" fill="#1a1a1a"/>
+    <text x="70" y="67" font-size="10" fill="#fff" font-weight="600">📊 대시보드</text>
+    <text x="25" y="100" font-size="10" fill="#666">🧠 전략</text>
+    <text x="25" y="125" font-size="10" fill="#666">📈 거래내역</text>
+    <text x="25" y="150" font-size="10" fill="#666">🔗 거래소</text>
+    <text x="25" y="175" font-size="10" fill="#666">⚙️ 설정</text>
+
+    <!-- ★ NEW: Trust banner on top -->
+    <rect x="140" y="0" width="680" height="30" fill="#1a1a1a"/>
+    <text x="155" y="19" font-size="11" fill="#fafaf7" font-weight="600">🔒 내 자산은 거래소에 그대로 보관됩니다 (비수탁형)</text>
+    <text x="800" y="19" font-size="10" fill="#ccc" text-anchor="end">자세히 →</text>
+
+    <!-- Top bar (아래로 밀림) -->
+    <line x1="140" y1="80" x2="820" y2="80" stroke="#1a1a1a" stroke-width="0.5"/>
+    <text x="160" y="65" font-size="13" font-weight="600" fill="#1a1a1a">안녕하세요, 노경민 님</text>
+
+    <!-- ★ CHANGED: Asset widget with 비수탁 라벨 -->
+    <rect x="160" y="100" width="300" height="140" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="175" y="124" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">TOTAL ASSETS</text>
+    <text x="175" y="158" font-size="26" font-weight="700" fill="#1a1a1a">₩ 12,450,000</text>
+    <text x="175" y="182" font-size="11" fill="#1a1a1a">▲ +5.4% (₩640,000)</text>
+
+    <!-- NEW: 보관 위치 명시 -->
+    <line x1="175" y1="192" x2="445" y2="192" stroke="#1a1a1a" stroke-width="0.5"/>
+    <rect x="175" y="200" width="18" height="18" fill="#1a1a1a"/>
+    <text x="184" y="213" font-size="10" fill="#fff" text-anchor="middle">🔒</text>
+    <text x="200" y="213" font-size="10" fill="#1a1a1a" font-weight="600">업비트에 보관 중 (비수탁)</text>
+
+    <!-- Strategy card (그대로) -->
+    <rect x="480" y="100" width="320" height="140" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="495" y="124" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">ACTIVE STRATEGIES</text>
+    <text x="495" y="158" font-size="26" font-weight="700" fill="#1a1a1a">3 / 5</text>
+    <text x="495" y="185" font-size="10" fill="#1a1a1a">• BTC 분할매수  [ON]</text>
+    <text x="495" y="203" font-size="10" fill="#1a1a1a">• ETH 모멘텀  [ON]</text>
+
+    <!-- Chart -->
+    <rect x="160" y="260" width="640" height="150" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="175" y="284" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">PORTFOLIO PERFORMANCE / 30D</text>
+    <polyline points="185,395 240,385 295,375 350,360 405,365 460,345 515,325 570,315 625,300 680,285 735,275 790,260" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+
+    <!-- Alert feed -->
+    <rect x="160" y="430" width="640" height="110" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="175" y="454" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">RECENT ALERTS</text>
+    <text x="175" y="478" font-size="10" fill="#1a1a1a">• [12:34] BTC 매수 체결 — ₩45,200 × 0.01 BTC</text>
+    <text x="175" y="498" font-size="10" fill="#1a1a1a">• [11:02] 전략 'BTC 분할매수' 트리거 발동</text>
+    <text x="175" y="518" font-size="10" fill="#666">• [09:15] 강화학습 엔진 변동성↑ 감지</text>
+
+    <!-- Change markers -->
+    <circle cx="835" cy="15" r="12" fill="#1a1a1a"/>
+    <text x="835" y="20" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">1</text>
+
+    <circle cx="470" cy="215" r="12" fill="#1a1a1a"/>
+    <text x="470" y="220" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">2</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="60" y1="870" x2="1740" y2="870" stroke="#1a1a1a" stroke-width="0.5"/>
+  <text x="60" y="890" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">1️⃣ 상단 영구 신뢰 배너  · 2️⃣ 자산 위젯 하단 "업비트 보관 중" 명시 · 두 곳에서 반복 노출로 인지 강화</text>
+  <text x="1740" y="890" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">개선안 01 / P0 / 예상 임팩트 ★★★</text>
+
+</svg>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1100" width="1800" height="1100" font-family="'Noto Sans CJK KR', sans-serif">
+
+  <rect width="1800" height="1100" fill="#fafaf7"/>
+
+  <!-- Header -->
+  <text x="60" y="60" font-size="11" fill="#666" letter-spacing="1.5" font-family="'Noto Sans CJK KR', monospace">MISSION 09 / PRIORITY MATRIX</text>
+  <text x="60" y="92" font-size="26" font-weight="600" fill="#1a1a1a" letter-spacing="-0.5">개선안 우선순위 매트릭스 (Impact × Effort)</text>
+  <text x="1740" y="60" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">9 IMPROVEMENTS · P0-P2</text>
+  <text x="1740" y="76" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">작성자: 이제혁</text>
+  <line x1="60" y1="115" x2="1740" y2="115" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- ============ Matrix ============ -->
+  <g transform="translate(60, 150)">
+
+    <!-- Quadrant background -->
+    <rect x="80" y="60" width="900" height="720" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+
+    <!-- Grid lines -->
+    <line x1="530" y1="60" x2="530" y2="780" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="4 3"/>
+    <line x1="80" y1="420" x2="980" y2="420" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="4 3"/>
+
+    <!-- Quadrant labels -->
+    <text x="305" y="90" font-size="11" fill="#1a1a1a" font-weight="700" text-anchor="middle" font-family="'Noto Sans CJK KR', monospace">QUICK WINS (즉시)</text>
+    <text x="305" y="108" font-size="9" fill="#666" text-anchor="middle">임팩트 ↑ · 노력 ↓</text>
+
+    <text x="755" y="90" font-size="11" fill="#1a1a1a" font-weight="700" text-anchor="middle" font-family="'Noto Sans CJK KR', monospace">MAJOR PROJECTS (계획)</text>
+    <text x="755" y="108" font-size="9" fill="#666" text-anchor="middle">임팩트 ↑ · 노력 ↑</text>
+
+    <text x="305" y="450" font-size="11" fill="#666" font-weight="600" text-anchor="middle" font-family="'Noto Sans CJK KR', monospace">FILL-INS (여유시)</text>
+    <text x="305" y="468" font-size="9" fill="#666" text-anchor="middle">임팩트 ↓ · 노력 ↓</text>
+
+    <text x="755" y="450" font-size="11" fill="#666" font-weight="600" text-anchor="middle" font-family="'Noto Sans CJK KR', monospace">THANKLESS (재검토)</text>
+    <text x="755" y="468" font-size="9" fill="#666" text-anchor="middle">임팩트 ↓ · 노력 ↑</text>
+
+    <!-- Axis labels -->
+    <text x="530" y="810" font-size="12" fill="#1a1a1a" font-weight="600" text-anchor="middle">개발 노력 →</text>
+    <text x="70" y="420" font-size="12" fill="#1a1a1a" font-weight="600" text-anchor="middle" transform="rotate(-90 70 420)">사용자 임팩트 →</text>
+
+    <!-- Axis endpoints -->
+    <text x="80" y="800" font-size="10" fill="#666">낮음</text>
+    <text x="980" y="800" font-size="10" fill="#666" text-anchor="end">높음</text>
+    <text x="60" y="775" font-size="10" fill="#666">낮음</text>
+    <text x="60" y="70" font-size="10" fill="#666">높음</text>
+
+    <!-- ============ Data points ============ -->
+    <!-- P0 items (Quick Wins area) -->
+    <!-- I1: 비수탁 배너 (매우 임팩트↑, 노력↓) -->
+    <circle cx="200" cy="150" r="26" fill="#1a1a1a"/>
+    <text x="200" y="147" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">I1</text>
+    <text x="200" y="160" font-size="8" fill="#fff" text-anchor="middle">P0</text>
+    <text x="238" y="150" font-size="11" fill="#1a1a1a" font-weight="600">비수탁 신뢰 배너</text>
+    <text x="238" y="163" font-size="9" fill="#666">CSS 추가만 · 인지율 +57%p</text>
+
+    <!-- I2: 자산 위젯 라벨 (임팩트 매우 높음, 노력 매우 낮음) -->
+    <circle cx="160" cy="200" r="26" fill="#1a1a1a"/>
+    <text x="160" y="197" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">I2</text>
+    <text x="160" y="210" font-size="8" fill="#fff" text-anchor="middle">P0</text>
+    <text x="200" y="200" font-size="11" fill="#1a1a1a" font-weight="600">자산 위젯 "업비트 보관" 라벨</text>
+    <text x="200" y="213" font-size="9" fill="#666">텍스트 1줄 추가 · H2 검증 실패 해소</text>
+
+    <!-- I3: GPT 로딩 인디케이터 (임팩트↑↑, 노력↓) -->
+    <circle cx="220" cy="260" r="26" fill="#1a1a1a"/>
+    <text x="220" y="257" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">I3</text>
+    <text x="220" y="270" font-size="8" fill="#fff" text-anchor="middle">P0</text>
+    <text x="258" y="260" font-size="11" fill="#1a1a1a" font-weight="600">GPT 응답 로딩 인디케이터</text>
+    <text x="258" y="273" font-size="9" fill="#666">스피너 컴포넌트 · P1 발화 "답답함" 해소</text>
+
+    <!-- I4: 블록 hover 상태 (임팩트↑, 노력↓) -->
+    <circle cx="300" cy="320" r="26" fill="#1a1a1a"/>
+    <text x="300" y="317" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">I4</text>
+    <text x="300" y="330" font-size="8" fill="#fff" text-anchor="middle">P0</text>
+    <text x="338" y="320" font-size="11" fill="#1a1a1a" font-weight="600">블록 hover 상태 + 편집 아이콘</text>
+    <text x="338" y="333" font-size="9" fill="#666">CSS + 아이콘 · T3 완료율 66→100%</text>
+
+    <!-- Major projects (P1) -->
+    <!-- I5: 블록 편집 모달 (임팩트↑, 노력↑↑) -->
+    <circle cx="710" cy="230" r="26" fill="#1a1a1a" fill-opacity="0.55"/>
+    <text x="710" y="227" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">I5</text>
+    <text x="710" y="240" font-size="8" fill="#fff" text-anchor="middle">P1</text>
+    <text x="748" y="230" font-size="11" fill="#1a1a1a" font-weight="600">블록 편집 모달 신규 개발</text>
+    <text x="748" y="243" font-size="9" fill="#666">신규 컴포넌트 · P2 오조작 3회 해소</text>
+
+    <!-- I6: 벤치마크 라인 (임팩트↑, 노력 중) -->
+    <circle cx="620" cy="290" r="26" fill="#1a1a1a" fill-opacity="0.55"/>
+    <text x="620" y="287" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">I6</text>
+    <text x="620" y="300" font-size="8" fill="#fff" text-anchor="middle">P1</text>
+    <text x="658" y="290" font-size="11" fill="#1a1a1a" font-weight="600">벤치마크 비교선 (Equity Curve)</text>
+    <text x="658" y="303" font-size="9" fill="#666">BTC 시세 데이터 파이프라인 필요</text>
+
+    <!-- I7: KPI 툴팁 (임팩트 중, 노력↓) -->
+    <circle cx="250" cy="380" r="26" fill="#1a1a1a" fill-opacity="0.55"/>
+    <text x="250" y="377" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">I7</text>
+    <text x="250" y="390" font-size="8" fill="#fff" text-anchor="middle">P1</text>
+    <text x="288" y="380" font-size="11" fill="#1a1a1a" font-weight="600">KPI 카드 hover 툴팁</text>
+    <text x="288" y="393" font-size="9" fill="#666">tooltip 컴포넌트 · P3 발화 "MDD?" 해소</text>
+
+    <!-- Fill-ins (P2) -->
+    <!-- I8: 글자수 카운터 -->
+    <circle cx="220" cy="520" r="24" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="220" y="517" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="700">I8</text>
+    <text x="220" y="530" font-size="8" fill="#1a1a1a" text-anchor="middle">P2</text>
+    <text x="256" y="520" font-size="11" fill="#1a1a1a" font-weight="600">글자수 카운터 (500자)</text>
+    <text x="256" y="533" font-size="9" fill="#666">P3 발화 "뭐라고 써야?" · 완만한 개선</text>
+
+    <!-- I9: Cmd+Enter 단축키 -->
+    <circle cx="300" cy="600" r="24" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="300" y="597" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="700">I9</text>
+    <text x="300" y="610" font-size="8" fill="#1a1a1a" text-anchor="middle">P2</text>
+    <text x="336" y="600" font-size="11" fill="#1a1a1a" font-weight="600">Cmd+Enter 단축키 지원</text>
+    <text x="336" y="613" font-size="9" fill="#666">파워유저용 · 3명 중 1명(P2)만 시도</text>
+
+    <!-- Origin markers -->
+    <circle cx="80" cy="780" r="4" fill="#1a1a1a"/>
+    <circle cx="980" cy="60" r="4" fill="#1a1a1a"/>
+
+  </g>
+
+  <!-- ============ Legend & Summary ============ -->
+  <g transform="translate(1100, 200)">
+    <rect width="640" height="670" fill="#1a1a1a"/>
+
+    <text x="30" y="40" font-size="10" fill="#ccc" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1.5">EXECUTION SUMMARY</text>
+    <line x1="30" y1="55" x2="610" y2="55" stroke="#666" stroke-width="0.5"/>
+
+    <!-- Sprint 1 -->
+    <text x="30" y="90" font-size="14" fill="#fafaf7" font-weight="700">🚀 Sprint 1 (즉시, 1주)</text>
+    <text x="30" y="112" font-size="11" fill="#ccc">Quick Wins 4개 · Impact 최대</text>
+
+    <text x="50" y="140" font-size="11" fill="#fafaf7">✓ I1 비수탁 신뢰 배너</text>
+    <text x="50" y="160" font-size="11" fill="#fafaf7">✓ I2 자산 위젯 라벨</text>
+    <text x="50" y="180" font-size="11" fill="#fafaf7">✓ I3 GPT 로딩 인디케이터</text>
+    <text x="50" y="200" font-size="11" fill="#fafaf7">✓ I4 블록 hover 상태</text>
+
+    <text x="380" y="90" font-size="14" fill="#fafaf7" font-weight="700">예상 결과</text>
+    <text x="380" y="115" font-size="10" fill="#ccc">• H2 정답률 33% → 90%+</text>
+    <text x="380" y="133" font-size="10" fill="#ccc">• T3 완료율 66% → 100%</text>
+    <text x="380" y="151" font-size="10" fill="#ccc">• W3 멈춤 52초 → 20초 이하</text>
+    <text x="380" y="169" font-size="10" fill="#ccc">• 총 개발 시간 ~16시간</text>
+
+    <line x1="30" y1="230" x2="610" y2="230" stroke="#666" stroke-width="0.5"/>
+
+    <!-- Sprint 2 -->
+    <text x="30" y="265" font-size="14" fill="#fafaf7" font-weight="700">📈 Sprint 2 (권장, 2-3주)</text>
+    <text x="30" y="287" font-size="11" fill="#ccc">Major Projects 3개 · UX 완성도</text>
+
+    <text x="50" y="315" font-size="11" fill="#fafaf7">✓ I5 블록 편집 모달</text>
+    <text x="50" y="335" font-size="11" fill="#fafaf7">✓ I6 벤치마크 비교선</text>
+    <text x="50" y="355" font-size="11" fill="#fafaf7">✓ I7 KPI hover 툴팁</text>
+
+    <text x="380" y="265" font-size="14" fill="#fafaf7" font-weight="700">예상 결과</text>
+    <text x="380" y="290" font-size="10" fill="#ccc">• 자신감 있는 배포 결정</text>
+    <text x="380" y="308" font-size="10" fill="#ccc">• 초보자 이해도 상승</text>
+    <text x="380" y="326" font-size="10" fill="#ccc">• 신뢰성 강화</text>
+    <text x="380" y="344" font-size="10" fill="#ccc">• 총 개발 시간 ~40시간</text>
+
+    <line x1="30" y1="390" x2="610" y2="390" stroke="#666" stroke-width="0.5"/>
+
+    <!-- Sprint 3 -->
+    <text x="30" y="425" font-size="14" fill="#fafaf7" font-weight="700">🎯 Sprint 3 (차후, 여유 시)</text>
+    <text x="30" y="447" font-size="11" fill="#ccc">Fill-ins 2개 · 파워유저 개선</text>
+
+    <text x="50" y="475" font-size="11" fill="#fafaf7">○ I8 글자수 카운터</text>
+    <text x="50" y="495" font-size="11" fill="#fafaf7">○ I9 Cmd+Enter 단축키</text>
+
+    <text x="380" y="425" font-size="14" fill="#fafaf7" font-weight="700">예상 결과</text>
+    <text x="380" y="450" font-size="10" fill="#ccc">• 파워유저 만족도 상승</text>
+    <text x="380" y="468" font-size="10" fill="#ccc">• 총 개발 시간 ~4시간</text>
+
+    <line x1="30" y1="530" x2="610" y2="530" stroke="#666" stroke-width="0.5"/>
+
+    <text x="30" y="565" font-size="10" fill="#ccc" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1.5">TOTAL IMPROVEMENTS</text>
+    <text x="30" y="600" font-size="32" fill="#fafaf7" font-weight="700">9개</text>
+    <text x="120" y="605" font-size="11" fill="#ccc">P0: 4  ·  P1: 3  ·  P2: 2</text>
+
+    <text x="30" y="640" font-size="10" fill="#ccc">Sprint 1만 완료해도 <tspan font-weight="700" fill="#fafaf7">전체 임팩트의 65%</tspan> 확보</text>
+  </g>
+
+  <!-- Footer -->
+  <line x1="60" y1="1050" x2="1740" y2="1050" stroke="#1a1a1a" stroke-width="0.5"/>
+  <text x="60" y="1075" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">PRIORITY MATRIX · 데이터 기반 개선안 9개 · Impact × Effort 축으로 우선순위 결정</text>
+  <text x="1740" y="1075" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">작성자: 이제혁 / PBL WK09</text>
+
+</svg>

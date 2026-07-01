@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 900" width="1800" height="900" font-family="'Noto Sans CJK KR', sans-serif">
+
+  <rect width="1800" height="900" fill="#fafaf7"/>
+
+  <!-- Header -->
+  <text x="60" y="60" font-size="11" fill="#666" letter-spacing="1.5" font-family="'Noto Sans CJK KR', monospace">BEFORE / AFTER · IMPROVEMENT 03</text>
+  <text x="60" y="92" font-size="26" font-weight="600" fill="#1a1a1a" letter-spacing="-0.5">개선안 3: 백테스팅 결과 컨텍스트 제공 (W4)</text>
+  <text x="1740" y="60" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">PRIORITY: P1</text>
+  <text x="1740" y="76" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">작성자: 이제혁</text>
+  <line x1="60" y1="115" x2="1740" y2="115" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Rationale strip -->
+  <g transform="translate(60, 140)">
+    <rect width="1680" height="80" fill="#1a1a1a"/>
+    <text x="20" y="28" font-size="10" fill="#ccc" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1.5">DATA-DRIVEN RATIONALE</text>
+    <text x="20" y="52" font-size="13" fill="#fafaf7">📊 김주형(P3) 발화 "MDD가 뭐예요?" · "Sharpe 1.84 좋은 수치?" · 강민석 발화 "작년 BTC 40% 올랐는데 이거 잘하는 건가요?" · 비교 컨텍스트 부재</text>
+    <text x="20" y="70" font-size="11" fill="#ccc">🎯 성공 목표: T4 자신감 있는 배포 결정 · 초보자 이해 시간 <tspan font-weight="700">38초 → 15초</tspan></text>
+  </g>
+
+  <!-- BEFORE -->
+  <text x="60" y="260" font-size="14" fill="#666" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1.5">◄ BEFORE (현재)</text>
+
+  <g transform="translate(60, 280)">
+    <rect width="820" height="560" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+
+    <line x1="0" y1="50" x2="820" y2="50" stroke="#1a1a1a" stroke-width="0.5"/>
+    <text x="20" y="30" font-size="11" fill="#666">← 전략 편집</text>
+    <text x="410" y="30" font-size="13" font-weight="600" fill="#1a1a1a" text-anchor="middle">백테스팅 결과: BTC 분할매수 v1</text>
+    <rect x="730" y="18" width="60" height="22" fill="#1a1a1a"/>
+    <text x="760" y="32" font-size="10" fill="#fff" text-anchor="middle">배포 →</text>
+
+    <!-- KPIs (용어만 표시) -->
+    <rect x="20" y="70" width="190" height="90" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="35" y="90" font-size="9" fill="#666" font-family="'Noto Sans CJK KR', monospace">TOTAL RETURN</text>
+    <text x="35" y="122" font-size="24" font-weight="700" fill="#1a1a1a">+24.7%</text>
+    <text x="35" y="145" font-size="9" fill="#666">최근 90일</text>
+
+    <rect x="220" y="70" width="190" height="90" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="235" y="90" font-size="9" fill="#666" font-family="'Noto Sans CJK KR', monospace">WIN RATE</text>
+    <text x="235" y="122" font-size="24" font-weight="700" fill="#1a1a1a">68%</text>
+    <text x="235" y="145" font-size="9" fill="#666">42승 20패</text>
+
+    <rect x="420" y="70" width="190" height="90" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="435" y="90" font-size="9" fill="#666" font-family="'Noto Sans CJK KR', monospace">MAX DRAWDOWN</text>
+    <text x="435" y="122" font-size="24" font-weight="700" fill="#1a1a1a">-8.2%</text>
+    <text x="435" y="145" font-size="9" fill="#666">최대 손실</text>
+
+    <rect x="620" y="70" width="180" height="90" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="635" y="90" font-size="9" fill="#666" font-family="'Noto Sans CJK KR', monospace">SHARPE RATIO</text>
+    <text x="635" y="122" font-size="24" font-weight="700" fill="#1a1a1a">1.84</text>
+    <text x="635" y="145" font-size="9" fill="#666">위험 조정 수익</text>
+
+    <!-- Problem markers -->
+    <circle cx="500" cy="122" r="14" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="500" y="127" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="700">?</text>
+
+    <circle cx="720" cy="122" r="14" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="720" y="127" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="700">?</text>
+
+    <text x="410" y="185" font-size="10" fill="#666" text-anchor="middle" font-style="italic">"MDD? Sharpe? 이게 좋은 건지 모르겠음" - 김주형</text>
+
+    <!-- Equity chart (컨텍스트 없음) -->
+    <rect x="20" y="210" width="780" height="230" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="35" y="234" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">EQUITY CURVE</text>
+
+    <line x1="35" y1="410" x2="785" y2="410" stroke="#1a1a1a" stroke-width="0.5"/>
+    <line x1="35" y1="260" x2="35" y2="410" stroke="#1a1a1a" stroke-width="0.5"/>
+
+    <polyline points="40,390 90,385 140,375 190,365 240,350 290,335 340,345 390,320 440,295 490,280 540,260 590,275 640,255 690,240 740,220 780,215" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+
+    <!-- Problem: 벤치마크 없음 -->
+    <circle cx="700" cy="230" r="14" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="700" y="235" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="700">?</text>
+    <text x="410" y="465" font-size="10" fill="#666" text-anchor="middle" font-style="italic">"작년 BTC 40% 올랐는데 이 24%가 잘하는 건가?" - 강민석</text>
+
+    <!-- Buttons -->
+    <rect x="20" y="500" width="140" height="34" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="90" y="521" font-size="11" fill="#1a1a1a" text-anchor="middle">전략 수정</text>
+
+    <rect x="180" y="500" width="140" height="34" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="250" y="521" font-size="11" fill="#1a1a1a" text-anchor="middle">CSV 다운로드</text>
+
+    <rect x="640" y="500" width="160" height="34" fill="#1a1a1a"/>
+    <text x="720" y="521" font-size="11" fill="#fff" text-anchor="middle" font-weight="600">실거래 배포 →</text>
+  </g>
+
+  <g transform="translate(895, 550)">
+    <text x="0" y="10" font-size="24" fill="#1a1a1a" text-anchor="middle">→</text>
+    <text x="0" y="40" font-size="10" fill="#666" text-anchor="middle" font-family="'Noto Sans CJK KR', monospace">IMPROVE</text>
+  </g>
+
+  <!-- AFTER -->
+  <text x="920" y="260" font-size="14" fill="#1a1a1a" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1.5" font-weight="600">► AFTER (개선안)</text>
+
+  <g transform="translate(920, 280)">
+    <rect width="820" height="560" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+
+    <line x1="0" y1="50" x2="820" y2="50" stroke="#1a1a1a" stroke-width="0.5"/>
+    <text x="20" y="30" font-size="11" fill="#666">← 전략 편집</text>
+    <text x="410" y="30" font-size="13" font-weight="600" fill="#1a1a1a" text-anchor="middle">백테스팅 결과: BTC 분할매수 v1</text>
+    <rect x="730" y="18" width="60" height="22" fill="#1a1a1a"/>
+    <text x="760" y="32" font-size="10" fill="#fff" text-anchor="middle">배포 →</text>
+
+    <!-- ★ KPIs with hover tooltip preview -->
+    <rect x="20" y="70" width="190" height="105" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="35" y="90" font-size="9" fill="#666" font-family="'Noto Sans CJK KR', monospace">TOTAL RETURN</text>
+    <text x="35" y="122" font-size="24" font-weight="700" fill="#1a1a1a">+24.7%</text>
+    <text x="35" y="145" font-size="9" fill="#666">최근 90일</text>
+    <text x="35" y="163" font-size="9" fill="#1a1a1a" font-weight="600">▲ 시장 대비 +12.3%p</text>
+
+    <rect x="220" y="70" width="190" height="105" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="235" y="90" font-size="9" fill="#666" font-family="'Noto Sans CJK KR', monospace">WIN RATE</text>
+    <text x="235" y="122" font-size="24" font-weight="700" fill="#1a1a1a">68%</text>
+    <text x="235" y="145" font-size="9" fill="#666">42승 20패</text>
+    <text x="235" y="163" font-size="9" fill="#1a1a1a" font-weight="600">▲ 평균 이상 (기준 55%)</text>
+
+    <rect x="420" y="70" width="190" height="105" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="435" y="90" font-size="9" fill="#666" font-family="'Noto Sans CJK KR', monospace">MAX DRAWDOWN ⓘ</text>
+    <text x="435" y="122" font-size="24" font-weight="700" fill="#1a1a1a">-8.2%</text>
+    <text x="435" y="145" font-size="9" fill="#666">최대 손실</text>
+    <text x="435" y="163" font-size="9" fill="#1a1a1a" font-weight="600">✓ 안정적 (BTC 단순보유 -35%)</text>
+
+    <!-- ★ NEW: hover tooltip -->
+    <rect x="430" y="180" width="230" height="55" fill="#1a1a1a"/>
+    <text x="440" y="197" font-size="9" fill="#ccc" font-family="'Noto Sans CJK KR', monospace">MDD 툴팁</text>
+    <text x="440" y="212" font-size="10" fill="#fafaf7">Maximum Drawdown</text>
+    <text x="440" y="226" font-size="9" fill="#ccc">최고점에서 최저점까지 하락폭</text>
+
+    <rect x="620" y="70" width="180" height="105" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="635" y="90" font-size="9" fill="#666" font-family="'Noto Sans CJK KR', monospace">SHARPE RATIO ⓘ</text>
+    <text x="635" y="122" font-size="24" font-weight="700" fill="#1a1a1a">1.84</text>
+    <text x="635" y="145" font-size="9" fill="#666">위험 조정 수익</text>
+    <text x="635" y="163" font-size="9" fill="#1a1a1a" font-weight="600">✓ 우수 (1.0 이상 권장)</text>
+
+    <!-- Chart WITH BENCHMARK -->
+    <rect x="20" y="250" width="780" height="190" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="35" y="274" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">EQUITY CURVE</text>
+
+    <!-- Legend -->
+    <line x1="600" y1="272" x2="620" y2="272" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="625" y="276" font-size="9" fill="#1a1a1a">내 전략 (+24.7%)</text>
+    <line x1="720" y1="272" x2="740" y2="272" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="4 2"/>
+    <text x="745" y="276" font-size="9" fill="#666">BTC 단순 보유 (+12.4%)</text>
+
+    <line x1="35" y1="420" x2="785" y2="420" stroke="#1a1a1a" stroke-width="0.5"/>
+    <line x1="35" y1="290" x2="35" y2="420" stroke="#1a1a1a" stroke-width="0.5"/>
+
+    <!-- My strategy line -->
+    <polyline points="40,405 90,400 140,390 190,380 240,365 290,350 340,360 390,335 440,310 490,295 540,275 590,290 640,270 690,255 740,235 780,230" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+
+    <!-- ★ NEW: Benchmark line -->
+    <polyline points="40,405 90,402 140,398 190,395 240,388 290,382 340,378 390,370 440,365 490,362 540,355 590,350 640,345 690,340 740,335 780,330" fill="none" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="4 2"/>
+
+    <text x="410" y="465" font-size="10" fill="#1a1a1a" text-anchor="middle" font-weight="600">✓ 시장 평균보다 +12.3%p 우수, 낙폭도 낮아 안정적</text>
+
+    <!-- Buttons -->
+    <rect x="20" y="500" width="140" height="34" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="90" y="521" font-size="11" fill="#1a1a1a" text-anchor="middle">전략 수정</text>
+
+    <rect x="180" y="500" width="140" height="34" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="250" y="521" font-size="11" fill="#1a1a1a" text-anchor="middle">CSV 다운로드</text>
+
+    <rect x="640" y="500" width="160" height="34" fill="#1a1a1a"/>
+    <text x="720" y="521" font-size="11" fill="#fff" text-anchor="middle" font-weight="600">실거래 배포 →</text>
+
+    <!-- Change markers -->
+    <circle cx="180" cy="163" r="12" fill="#1a1a1a"/>
+    <text x="180" y="168" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">1</text>
+
+    <circle cx="595" cy="90" r="12" fill="#1a1a1a"/>
+    <text x="595" y="95" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">2</text>
+
+    <circle cx="770" cy="335" r="12" fill="#1a1a1a"/>
+    <text x="770" y="340" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">3</text>
+  </g>
+
+  <line x1="60" y1="870" x2="1740" y2="870" stroke="#1a1a1a" stroke-width="0.5"/>
+  <text x="60" y="890" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">1️⃣ 각 KPI에 컨텍스트 문구 ("시장 대비 +12.3%p") · 2️⃣ ⓘ 아이콘 hover 툴팁 (용어 설명) · 3️⃣ Equity Curve에 BTC 단순보유 벤치마크 라인</text>
+  <text x="1740" y="890" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">개선안 03 / P1 / 예상 임팩트 ★★</text>
+
+</svg>

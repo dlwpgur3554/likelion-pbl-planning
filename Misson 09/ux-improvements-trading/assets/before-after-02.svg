@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 900" width="1800" height="900" font-family="'Noto Sans CJK KR', sans-serif">
+
+  <rect width="1800" height="900" fill="#fafaf7"/>
+
+  <!-- Header -->
+  <text x="60" y="60" font-size="11" fill="#666" letter-spacing="1.5" font-family="'Noto Sans CJK KR', monospace">BEFORE / AFTER · IMPROVEMENT 02</text>
+  <text x="60" y="92" font-size="26" font-weight="600" fill="#1a1a1a" letter-spacing="-0.5">개선안 2: GPT 전략 화면 어포던스 강화 (W3)</text>
+  <text x="1740" y="60" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">PRIORITY: P0</text>
+  <text x="1740" y="76" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">작성자: 이제혁</text>
+  <line x1="60" y1="115" x2="1740" y2="115" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Rationale strip -->
+  <g transform="translate(60, 140)">
+    <rect width="1680" height="80" fill="#1a1a1a"/>
+    <text x="20" y="28" font-size="10" fill="#ccc" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1.5">DATA-DRIVEN RATIONALE</text>
+    <text x="20" y="52" font-size="13" fill="#fafaf7">📊 W3 누적 멈춤 <tspan font-weight="700">52초 (전체 최대)</tspan> · T3 완료율 <tspan font-weight="700">66% (김주형 실패)</tspan> · P1/P2 발화 "이거 누르면 뭐가 뜨나요?" · GPT 응답 대기 5-7초 무피드백</text>
+    <text x="20" y="70" font-size="11" fill="#ccc">🎯 성공 목표: W3 멈춤 <tspan font-weight="700">52초 → 20초 이하</tspan> · T3 완료율 <tspan font-weight="700">66% → 100%</tspan></text>
+  </g>
+
+  <!-- ============ BEFORE ============ -->
+  <text x="60" y="260" font-size="14" fill="#666" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1.5">◄ BEFORE (현재)</text>
+
+  <g transform="translate(60, 280)">
+    <rect width="820" height="560" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+
+    <!-- Top bar -->
+    <line x1="0" y1="50" x2="820" y2="50" stroke="#1a1a1a" stroke-width="0.5"/>
+    <text x="20" y="30" font-size="11" fill="#666">← 전략 라이브러리</text>
+    <text x="410" y="30" font-size="13" font-weight="600" fill="#1a1a1a" text-anchor="middle">새 전략 만들기</text>
+    <rect x="730" y="18" width="60" height="22" fill="#1a1a1a"/>
+    <text x="760" y="32" font-size="10" fill="#fff" text-anchor="middle">저장</text>
+
+    <!-- Left: Chat -->
+    <rect x="20" y="70" width="360" height="470" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="35" y="92" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">CHAT WITH GPT</text>
+
+    <rect x="35" y="105" width="270" height="45" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="45" y="125" font-size="10" fill="#1a1a1a">GPT: 안녕하세요! 어떤 전략을</text>
+    <text x="45" y="140" font-size="10" fill="#1a1a1a">만들고 싶으신가요?</text>
+
+    <rect x="95" y="165" width="270" height="45" fill="#1a1a1a"/>
+    <text x="105" y="185" font-size="10" fill="#fff" font-style="italic">"BTC 5% 떨어지면 분할매수"</text>
+
+    <!-- ⚠️ 문제 지점: 응답 대기 (로딩 없음) -->
+    <rect x="35" y="225" width="270" height="60" fill="none" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="5 3"/>
+    <text x="170" y="252" font-size="10" fill="#666" text-anchor="middle" font-style="italic">(빈 공간 / 로딩 표시 없음)</text>
+    <text x="170" y="270" font-size="10" fill="#666" text-anchor="middle" font-style="italic">P1: "응답 기다리는 게 답답"</text>
+
+    <!-- Chat input -->
+    <rect x="35" y="480" width="270" height="30" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="45" y="498" font-size="10" fill="#666">메시지 입력...</text>
+
+    <!-- Right: Block editor -->
+    <rect x="400" y="70" width="400" height="470" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="415" y="92" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">NO-CODE BLOCK EDITOR</text>
+
+    <!-- Blocks (어포던스 부족) -->
+    <rect x="415" y="110" width="370" height="60" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+    <rect x="415" y="110" width="60" height="60" fill="#1a1a1a"/>
+    <text x="445" y="145" font-size="10" fill="#fff" text-anchor="middle" font-weight="600">트리거</text>
+    <text x="490" y="135" font-size="11" font-weight="600" fill="#1a1a1a">가격 변동 조건</text>
+    <text x="490" y="155" font-size="10" fill="#666">BTC ─5% (24h)</text>
+
+    <text x="600" y="195" font-size="14" fill="#666" text-anchor="middle">↓</text>
+
+    <rect x="415" y="205" width="370" height="60" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+    <rect x="415" y="205" width="60" height="60" fill="#1a1a1a"/>
+    <text x="445" y="240" font-size="10" fill="#fff" text-anchor="middle" font-weight="600">액션</text>
+    <text x="490" y="230" font-size="11" font-weight="600" fill="#1a1a1a">3분할 매수</text>
+    <text x="490" y="250" font-size="10" fill="#666">자본 30% / 분할 2h</text>
+
+    <!-- ⚠️ 문제 지점: 클릭 어포던스 없음 -->
+    <circle cx="820" cy="235" r="14" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+    <text x="820" y="240" font-size="11" fill="#1a1a1a" text-anchor="middle" font-weight="700">?</text>
+
+    <text x="600" y="295" font-size="14" fill="#666" text-anchor="middle">↓</text>
+
+    <rect x="415" y="305" width="370" height="60" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+    <rect x="415" y="305" width="60" height="60" fill="#1a1a1a"/>
+    <text x="445" y="340" font-size="10" fill="#fff" text-anchor="middle" font-weight="600">손절</text>
+    <text x="490" y="330" font-size="11" font-weight="600" fill="#1a1a1a">-3% 시 정리</text>
+
+    <text x="20" y="565" font-size="9" fill="#666" font-style="italic">P2: "블록 클릭해도 아무 일도 안 일어남" (오조작 3회)</text>
+  </g>
+
+  <!-- Arrow -->
+  <g transform="translate(895, 550)">
+    <text x="0" y="10" font-size="24" fill="#1a1a1a" text-anchor="middle">→</text>
+    <text x="0" y="40" font-size="10" fill="#666" text-anchor="middle" font-family="'Noto Sans CJK KR', monospace">IMPROVE</text>
+  </g>
+
+  <!-- ============ AFTER ============ -->
+  <text x="920" y="260" font-size="14" fill="#1a1a1a" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1.5" font-weight="600">► AFTER (개선안)</text>
+
+  <g transform="translate(920, 280)">
+    <rect width="820" height="560" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+
+    <line x1="0" y1="50" x2="820" y2="50" stroke="#1a1a1a" stroke-width="0.5"/>
+    <text x="20" y="30" font-size="11" fill="#666">← 전략 라이브러리</text>
+    <text x="410" y="30" font-size="13" font-weight="600" fill="#1a1a1a" text-anchor="middle">새 전략 만들기</text>
+    <rect x="730" y="18" width="60" height="22" fill="#1a1a1a"/>
+    <text x="760" y="32" font-size="10" fill="#fff" text-anchor="middle">저장</text>
+
+    <!-- Left: Chat with LOADING -->
+    <rect x="20" y="70" width="360" height="470" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="35" y="92" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">CHAT WITH GPT</text>
+
+    <rect x="35" y="105" width="270" height="45" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="45" y="125" font-size="10" fill="#1a1a1a">GPT: 안녕하세요! 어떤 전략을</text>
+    <text x="45" y="140" font-size="10" fill="#1a1a1a">만들고 싶으신가요?</text>
+
+    <rect x="95" y="165" width="270" height="45" fill="#1a1a1a"/>
+    <text x="105" y="185" font-size="10" fill="#fff" font-style="italic">"BTC 5% 떨어지면 분할매수"</text>
+
+    <!-- ★ NEW: 로딩 인디케이터 -->
+    <rect x="35" y="225" width="270" height="60" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+    <circle cx="55" cy="255" r="8" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="4 2"/>
+    <text x="72" y="252" font-size="11" fill="#1a1a1a" font-weight="600">전략을 생성하고 있어요...</text>
+    <text x="72" y="270" font-size="9" fill="#666">보통 5초 정도 걸립니다</text>
+
+    <!-- Chat input with counter -->
+    <rect x="35" y="480" width="230" height="30" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="45" y="498" font-size="10" fill="#666">메시지 입력...</text>
+    <text x="270" y="498" font-size="9" fill="#666" text-anchor="end">0/500</text>
+
+    <!-- Right: Block editor with AFFORDANCES -->
+    <rect x="400" y="70" width="400" height="470" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="1"/>
+    <text x="415" y="92" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">NO-CODE BLOCK EDITOR</text>
+    <text x="785" y="92" font-size="9" fill="#666" text-anchor="end">💡 블록 클릭 = 편집</text>
+
+    <!-- Trigger block with hover state hint -->
+    <rect x="415" y="110" width="370" height="60" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+    <rect x="415" y="110" width="60" height="60" fill="#1a1a1a"/>
+    <text x="445" y="145" font-size="10" fill="#fff" text-anchor="middle" font-weight="600">트리거</text>
+    <text x="490" y="135" font-size="11" font-weight="600" fill="#1a1a1a">가격 변동 조건</text>
+    <text x="490" y="155" font-size="10" fill="#666">BTC ─5% (24h)</text>
+    <!-- Edit icon hint -->
+    <rect x="740" y="130" width="30" height="20" fill="none" stroke="#1a1a1a" stroke-width="0.5" stroke-dasharray="2 1"/>
+    <text x="755" y="144" font-size="9" fill="#666" text-anchor="middle">✏️ 편집</text>
+
+    <text x="600" y="195" font-size="14" fill="#666" text-anchor="middle">↓</text>
+
+    <!-- Action block (HOVER STATE 표시) -->
+    <rect x="415" y="205" width="370" height="60" fill="#f4f4ef" stroke="#1a1a1a" stroke-width="2"/>
+    <rect x="415" y="205" width="60" height="60" fill="#1a1a1a"/>
+    <text x="445" y="240" font-size="10" fill="#fff" text-anchor="middle" font-weight="600">액션</text>
+    <text x="490" y="230" font-size="11" font-weight="600" fill="#1a1a1a">3분할 매수</text>
+    <text x="490" y="250" font-size="10" fill="#666">자본 30% / 분할 2h</text>
+    <rect x="740" y="225" width="30" height="20" fill="#1a1a1a"/>
+    <text x="755" y="240" font-size="9" fill="#fff" text-anchor="middle" font-weight="600">✏️ 편집</text>
+    <text x="490" y="285" font-size="9" fill="#666" font-style="italic">← hover 상태 · 클릭 시 편집 모달 열림</text>
+
+    <text x="600" y="315" font-size="14" fill="#666" text-anchor="middle">↓</text>
+
+    <rect x="415" y="325" width="370" height="60" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+    <rect x="415" y="325" width="60" height="60" fill="#1a1a1a"/>
+    <text x="445" y="360" font-size="10" fill="#fff" text-anchor="middle" font-weight="600">손절</text>
+    <text x="490" y="350" font-size="11" font-weight="600" fill="#1a1a1a">-3% 시 정리</text>
+    <rect x="740" y="345" width="30" height="20" fill="none" stroke="#1a1a1a" stroke-width="0.5" stroke-dasharray="2 1"/>
+    <text x="755" y="359" font-size="9" fill="#666" text-anchor="middle">✏️ 편집</text>
+
+    <!-- ★ NEW: Edit modal preview (dim) -->
+    <rect x="415" y="405" width="370" height="130" fill="none" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="4 2"/>
+    <text x="425" y="425" font-size="9" fill="#666" font-family="'Noto Sans CJK KR', monospace">EDIT MODAL PREVIEW</text>
+    <text x="425" y="445" font-size="11" fill="#1a1a1a" font-weight="600">액션 블록 편집</text>
+    <text x="425" y="465" font-size="10" fill="#666">자본 비율: [_30_]% → 슬라이더/입력</text>
+    <text x="425" y="485" font-size="10" fill="#666">분할 횟수: [_3_]회</text>
+    <rect x="425" y="500" width="60" height="22" fill="#1a1a1a"/>
+    <text x="455" y="514" font-size="10" fill="#fff" text-anchor="middle">저장</text>
+
+    <!-- Change markers -->
+    <circle cx="345" cy="252" r="12" fill="#1a1a1a"/>
+    <text x="345" y="257" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">1</text>
+
+    <circle cx="290" cy="498" r="12" fill="#1a1a1a"/>
+    <text x="290" y="503" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">2</text>
+
+    <circle cx="770" cy="235" r="12" fill="#1a1a1a"/>
+    <text x="770" y="240" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">3</text>
+
+    <circle cx="795" cy="415" r="12" fill="#1a1a1a"/>
+    <text x="795" y="420" font-size="10" fill="#fff" text-anchor="middle" font-weight="700">4</text>
+  </g>
+
+  <line x1="60" y1="870" x2="1740" y2="870" stroke="#1a1a1a" stroke-width="0.5"/>
+  <text x="60" y="890" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">1️⃣ GPT 응답 로딩 스피너 · 2️⃣ 글자수 카운터 (500자 한도) · 3️⃣ 블록 hover 상태 + 편집 아이콘 · 4️⃣ 편집 모달 명세</text>
+  <text x="1740" y="890" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">개선안 02 / P0 / 예상 임팩트 ★★★</text>
+
+</svg>
