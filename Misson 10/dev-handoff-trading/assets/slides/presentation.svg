@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 10800" width="1600" height="10800" font-family="'Noto Sans CJK KR', sans-serif">
+
+  <rect width="1600" height="10800" fill="#fafaf7"/>
+
+  <!-- ============================ SLIDE 01: TITLE ============================ -->
+  <g id="slide-01">
+    <rect x="0" y="0" width="1600" height="900" fill="#1a1a1a"/>
+
+    <text x="80" y="80" font-size="10" fill="#666" letter-spacing="2" font-family="'Noto Sans CJK KR', monospace">SLIDE 01 / 12</text>
+    <text x="1520" y="80" font-size="10" fill="#666" text-anchor="end" font-family="'Noto Sans CJK KR', monospace">PBL FINAL · 2025.07</text>
+
+    <text x="80" y="380" font-size="14" fill="#ccc" letter-spacing="3" font-family="'Noto Sans CJK KR', monospace">OPENAI × TRADING</text>
+
+    <text x="80" y="470" font-size="72" font-weight="700" fill="#fafaf7" letter-spacing="-2">OpenAI 연동형</text>
+    <text x="80" y="550" font-size="72" font-weight="700" fill="#fafaf7" letter-spacing="-2">자동매매 시스템</text>
+
+    <line x1="80" y1="620" x2="400" y2="620" stroke="#fafaf7" stroke-width="2"/>
+
+    <text x="80" y="670" font-size="20" fill="#ccc">코딩 없이 AI가 매매하는</text>
+    <text x="80" y="700" font-size="20" fill="#ccc">비수탁형 자동매매 플랫폼</text>
+
+    <text x="80" y="800" font-size="12" fill="#666" font-family="'Noto Sans CJK KR', monospace">PRESENTED BY 이제혁 · LIKELION PBL</text>
+
+    <!-- Decorative element -->
+    <rect x="1400" y="380" width="120" height="120" fill="none" stroke="#fafaf7" stroke-width="1"/>
+    <rect x="1420" y="400" width="120" height="120" fill="none" stroke="#fafaf7" stroke-width="1"/>
+    <rect x="1440" y="420" width="120" height="120" fill="none" stroke="#fafaf7" stroke-width="1"/>
+  </g>
+
+  <!-- ============================ SLIDE 02: PROBLEM ============================ -->
+  <g id="slide-02">
+    <rect x="0" y="900" width="1600" height="900" fill="#fafaf7"/>
+
+    <text x="80" y="980" font-size="10" fill="#666" letter-spacing="2" font-family="'Noto Sans CJK KR', monospace">SLIDE 02 / 12 · PROBLEM</text>
+    <line x1="80" y1="1000" x2="1520" y2="1000" stroke="#1a1a1a" stroke-width="2"/>
+
+    <text x="80" y="1100" font-size="14" fill="#666" letter-spacing="2" font-family="'Noto Sans CJK KR', monospace">문제 정의</text>
+    <text x="80" y="1200" font-size="56" font-weight="700" fill="#1a1a1a" letter-spacing="-2">자동매매는 개인 투자자에게</text>
+    <text x="80" y="1275" font-size="56" font-weight="700" fill="#1a1a1a" letter-spacing="-2">여전히 <tspan fill="#1a1a1a" text-decoration="underline">멀리 있는 기술</tspan>입니다.</text>
+
+    <!-- 3 problem cards -->
+    <g transform="translate(80, 1400)">
+      <rect x="0" y="0" width="440" height="280" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+      <text x="30" y="50" font-size="12" fill="#666" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1">PROBLEM 01</text>
+      <text x="30" y="90" font-size="24" font-weight="600" fill="#1a1a1a">진입장벽 높음</text>
+      <line x1="30" y1="115" x2="410" y2="115" stroke="#1a1a1a" stroke-width="0.5"/>
+      <text x="30" y="150" font-size="14" fill="#333">파이썬 코딩과 금융 지표 분석</text>
+      <text x="30" y="172" font-size="14" fill="#333">능력이 있어야만 시작 가능</text>
+      <text x="30" y="240" font-size="36" font-weight="700" fill="#1a1a1a">80%+</text>
+      <text x="130" y="240" font-size="12" fill="#666">일반인 접근 불가</text>
+    </g>
+
+    <g transform="translate(580, 1400)">
+      <rect x="0" y="0" width="440" height="280" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+      <text x="30" y="50" font-size="12" fill="#666" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1">PROBLEM 02</text>
+      <text x="30" y="90" font-size="24" font-weight="600" fill="#1a1a1a">보안 리스크</text>
+      <line x1="30" y1="115" x2="410" y2="115" stroke="#1a1a1a" stroke-width="0.5"/>
+      <text x="30" y="150" font-size="14" fill="#333">기존 플랫폼은 자산 예치 필수</text>
+      <text x="30" y="172" font-size="14" fill="#333">→ 해킹·부도 시 손실 위험</text>
+      <text x="30" y="240" font-size="36" font-weight="700" fill="#1a1a1a">₩1억+</text>
+      <text x="180" y="240" font-size="12" fill="#666">연간 자동매매 해킹 피해</text>
+    </g>
+
+    <g transform="translate(1080, 1400)">
+      <rect x="0" y="0" width="440" height="280" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+      <text x="30" y="50" font-size="12" fill="#666" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1">PROBLEM 03</text>
+      <text x="30" y="90" font-size="24" font-weight="600" fill="#1a1a1a">시장 대응 한계</text>
+      <line x1="30" y1="115" x2="410" y2="115" stroke="#1a1a1a" stroke-width="0.5"/>
+      <text x="30" y="150" font-size="14" fill="#333">고정 수식은 비선형 변동성에</text>
+      <text x="30" y="172" font-size="14" fill="#333">유연하게 대응 불가</text>
+      <text x="30" y="240" font-size="36" font-weight="700" fill="#1a1a1a">-15%</text>
+      <text x="130" y="240" font-size="12" fill="#666">평균 연간 손실률</text>
+    </g>
+  </g>
+
+  <!-- ============================ SLIDE 03: PERSONA ============================ -->
+  <g id="slide-03">
+    <rect x="0" y="1800" width="1600" height="900" fill="#f4f4ef"/>
+
+    <text x="80" y="1880" font-size="10" fill="#666" letter-spacing="2" font-family="'Noto Sans CJK KR', monospace">SLIDE 03 / 12 · PERSONA</text>
+    <line x1="80" y1="1900" x2="1520" y2="1900" stroke="#1a1a1a" stroke-width="2"/>
+
+    <text x="80" y="2000" font-size="14" fill="#666" letter-spacing="2" font-family="'Noto Sans CJK KR', monospace">타겟 페르소나</text>
+    <text x="80" y="2075" font-size="48" font-weight="700" fill="#1a1a1a" letter-spacing="-1">"자리를 비워도 AI가</text>
+    <text x="80" y="2130" font-size="48" font-weight="700" fill="#1a1a1a" letter-spacing="-1">대신 매매해줬으면"</text>
+
+    <!-- Persona card -->
+    <g transform="translate(80, 2210)">
+      <rect x="0" y="0" width="1440" height="360" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+
+      <!-- Avatar -->
+      <circle cx="120" cy="120" r="55" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+      <text x="120" y="130" font-size="32" font-weight="700" fill="#1a1a1a" text-anchor="middle">박</text>
+
+      <!-- Basic info -->
+      <text x="220" y="80" font-size="12" fill="#666" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1">PRIMARY PERSONA</text>
+      <text x="220" y="120" font-size="36" font-weight="700" fill="#1a1a1a">박서연 (27)</text>
+      <text x="220" y="155" font-size="16" fill="#333">스타트업 UX 디자이너 · 코인 투자 1년차 · 업비트 사용</text>
+
+      <!-- Pain points -->
+      <text x="220" y="220" font-size="12" fill="#666" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1">PAIN POINTS</text>
+      <text x="220" y="250" font-size="14" fill="#1a1a1a">• 회의 중 실시간 시장 모니터링 불가</text>
+      <text x="220" y="275" font-size="14" fill="#1a1a1a">• 자동매매 앱에 자산 예치가 찝찝함</text>
+      <text x="220" y="300" font-size="14" fill="#1a1a1a">• 전략 수정에 코딩이 필요해서 포기</text>
+
+      <!-- Needs -->
+      <text x="800" y="220" font-size="12" fill="#666" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1">NEEDS</text>
+      <text x="800" y="250" font-size="14" fill="#1a1a1a">• AI가 대신 매매 · 신호만 받고 싶음</text>
+      <text x="800" y="275" font-size="14" fill="#1a1a1a">• 자산은 거래소에 그대로 보관</text>
+      <text x="800" y="300" font-size="14" fill="#1a1a1a">• 코딩 없이 자연어로 전략 커스텀</text>
+    </g>
+  </g>
+
+  <!-- ============================ SLIDE 04: SCENARIO ============================ -->
+  <g id="slide-04">
+    <rect x="0" y="2700" width="1600" height="900" fill="#fafaf7"/>
+
+    <text x="80" y="2780" font-size="10" fill="#666" letter-spacing="2" font-family="'Noto Sans CJK KR', monospace">SLIDE 04 / 12 · SCENARIO</text>
+    <line x1="80" y1="2800" x2="1520" y2="2800" stroke="#1a1a1a" stroke-width="2"/>
+
+    <text x="80" y="2900" font-size="14" fill="#666" letter-spacing="2" font-family="'Noto Sans CJK KR', monospace">핵심 시나리오 · CUT 5</text>
+    <text x="80" y="2980" font-size="42" font-weight="700" fill="#1a1a1a" letter-spacing="-1">회의 중, API 오류가 발생해도</text>
+    <text x="80" y="3030" font-size="42" font-weight="700" fill="#1a1a1a" letter-spacing="-1">사용자는 <tspan fill="#1a1a1a" text-decoration="underline">아무것도 하지 않아도 된다</tspan>.</text>
+
+    <!-- 4-step recovery -->
+    <g transform="translate(80, 3120)">
+      <text x="0" y="20" font-size="12" fill="#666" font-family="'Noto Sans CJK KR', monospace">AUTOMATED RECOVERY FLOW</text>
+
+      <!-- Step 1 -->
+      <rect x="0" y="50" width="320" height="120" fill="#1a1a1a"/>
+      <text x="20" y="80" font-size="10" fill="#ccc" font-family="'Noto Sans CJK KR', monospace">STEP 1</text>
+      <text x="20" y="112" font-size="18" fill="#fafaf7" font-weight="600">오류 감지</text>
+      <text x="20" y="140" font-size="12" fill="#ccc">API 응답 실패 자동 감지</text>
+
+      <!-- Arrow -->
+      <text x="345" y="120" font-size="24" fill="#1a1a1a" text-anchor="middle">→</text>
+
+      <!-- Step 2 -->
+      <rect x="370" y="50" width="320" height="120" fill="#1a1a1a"/>
+      <text x="390" y="80" font-size="10" fill="#ccc" font-family="'Noto Sans CJK KR', monospace">STEP 2</text>
+      <text x="390" y="112" font-size="18" fill="#fafaf7" font-weight="600">자동 재연결</text>
+      <text x="390" y="140" font-size="12" fill="#ccc">최대 3회 · 5초 간격</text>
+
+      <text x="715" y="120" font-size="24" fill="#1a1a1a" text-anchor="middle">→</text>
+
+      <!-- Step 3 -->
+      <rect x="740" y="50" width="320" height="120" fill="#1a1a1a"/>
+      <text x="760" y="80" font-size="10" fill="#ccc" font-family="'Noto Sans CJK KR', monospace">STEP 3</text>
+      <text x="760" y="112" font-size="18" fill="#fafaf7" font-weight="600">RL 엔진 대응</text>
+      <text x="760" y="140" font-size="12" fill="#ccc">변동성↑ → 포지션 축소</text>
+
+      <text x="1085" y="120" font-size="24" fill="#1a1a1a" text-anchor="middle">→</text>
+
+      <!-- Step 4 -->
+      <rect x="1110" y="50" width="320" height="120" fill="#1a1a1a"/>
+      <text x="1130" y="80" font-size="10" fill="#ccc" font-family="'Noto Sans CJK KR', monospace">STEP 4</text>
+      <text x="1130" y="112" font-size="18" fill="#fafaf7" font-weight="600">푸시 알림</text>
+      <text x="1130" y="140" font-size="12" fill="#ccc">사후 통보 (개입 X)</text>
+
+      <!-- Result stat -->
+      <rect x="0" y="220" width="1430" height="100" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="6 3"/>
+      <text x="30" y="265" font-size="14" fill="#666" font-family="'Noto Sans CJK KR', monospace">RESULT</text>
+      <text x="30" y="300" font-size="24" fill="#1a1a1a" font-weight="700">✓ UX 테스트: 3명 중 3명 (100%) "사용자 개입 불필요" 정확 인지 · 평균 11초</text>
+    </g>
+  </g>
+
+  <!-- ============================ SLIDE 05: SOLUTION ============================ -->
+  <g id="slide-05">
+    <rect x="0" y="3600" width="1600" height="900" fill="#1a1a1a"/>
+
+    <text x="80" y="3680" font-size="10" fill="#666" letter-spacing="2" font-family="'Noto Sans CJK KR', monospace">SLIDE 05 / 12 · SOLUTION</text>
+    <line x1="80" y1="3700" x2="1520" y2="3700" stroke="#fafaf7" stroke-width="2"/>
+
+    <text x="80" y="3800" font-size="14" fill="#ccc" letter-spacing="2" font-family="'Noto Sans CJK KR', monospace">우리의 해결책</text>
+    <text x="80" y="3880" font-size="56" font-weight="700" fill="#fafaf7" letter-spacing="-2">3-Pillar Solution</text>
+
+    <!-- 3 pillars -->
+    <g transform="translate(80, 3980)">
+      <rect x="0" y="0" width="440" height="380" fill="none" stroke="#fafaf7" stroke-width="2"/>
+      <text x="30" y="60" font-size="72" fill="#fafaf7" font-weight="700">01</text>
+      <text x="30" y="120" font-size="12" fill="#ccc" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1">NO-CODE</text>
+      <text x="30" y="170" font-size="28" fill="#fafaf7" font-weight="600">자연어 전략 생성</text>
+      <line x1="30" y1="200" x2="410" y2="200" stroke="#fafaf7" stroke-width="0.5"/>
+      <text x="30" y="240" font-size="14" fill="#ccc">GPT에게 말로 요청 →</text>
+      <text x="30" y="262" font-size="14" fill="#ccc">전략 자동 생성 →</text>
+      <text x="30" y="284" font-size="14" fill="#ccc">블록 편집기로 미세조정</text>
+      <text x="30" y="340" font-size="14" fill="#fafaf7" font-weight="600">진입장벽 해소</text>
+    </g>
+
+    <g transform="translate(580, 3980)">
+      <rect x="0" y="0" width="440" height="380" fill="none" stroke="#fafaf7" stroke-width="2"/>
+      <text x="30" y="60" font-size="72" fill="#fafaf7" font-weight="700">02</text>
+      <text x="30" y="120" font-size="12" fill="#ccc" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1">NON-CUSTODIAL</text>
+      <text x="30" y="170" font-size="28" fill="#fafaf7" font-weight="600">비수탁형 구조</text>
+      <line x1="30" y1="200" x2="410" y2="200" stroke="#fafaf7" stroke-width="0.5"/>
+      <text x="30" y="240" font-size="14" fill="#ccc">자산은 거래소에 그대로 →</text>
+      <text x="30" y="262" font-size="14" fill="#ccc">API 키만으로 매매 →</text>
+      <text x="30" y="284" font-size="14" fill="#ccc">해킹 리스크 격리</text>
+      <text x="30" y="340" font-size="14" fill="#fafaf7" font-weight="600">보안 리스크 해소</text>
+    </g>
+
+    <g transform="translate(1080, 3980)">
+      <rect x="0" y="0" width="440" height="380" fill="none" stroke="#fafaf7" stroke-width="2"/>
+      <text x="30" y="60" font-size="72" fill="#fafaf7" font-weight="700">03</text>
+      <text x="30" y="120" font-size="12" fill="#ccc" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1">REINFORCEMENT</text>
+      <text x="30" y="170" font-size="28" fill="#fafaf7" font-weight="600">강화학습 적응</text>
+      <line x1="30" y1="200" x2="410" y2="200" stroke="#fafaf7" stroke-width="0.5"/>
+      <text x="30" y="240" font-size="14" fill="#ccc">시장 변동성 실시간 감지 →</text>
+      <text x="30" y="262" font-size="14" fill="#ccc">포지션 자동 조정 →</text>
+      <text x="30" y="284" font-size="14" fill="#ccc">전략 능동 진화</text>
+      <text x="30" y="340" font-size="14" fill="#fafaf7" font-weight="600">시장 대응 한계 해소</text>
+    </g>
+  </g>
+
+  <!-- ============================ SLIDE 06: KEY FEATURES ============================ -->
+  <g id="slide-06">
+    <rect x="0" y="4500" width="1600" height="900" fill="#fafaf7"/>
+
+    <text x="80" y="4580" font-size="10" fill="#666" letter-spacing="2" font-family="'Noto Sans CJK KR', monospace">SLIDE 06 / 12 · KEY FEATURES</text>
+    <line x1="80" y1="4600" x2="1520" y2="4600" stroke="#1a1a1a" stroke-width="2"/>
+
+    <text x="80" y="4700" font-size="14" fill="#666" letter-spacing="2" font-family="'Noto Sans CJK KR', monospace">핵심 기능</text>
+    <text x="80" y="4780" font-size="42" font-weight="700" fill="#1a1a1a" letter-spacing="-1">7개 그룹 · 25개 기능 · Depth 4</text>
+
+    <!-- 7 group grid -->
+    <g transform="translate(80, 4870)">
+      <!-- Row 1 -->
+      <rect x="0" y="0" width="200" height="180" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+      <text x="20" y="45" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">G1</text>
+      <text x="20" y="80" font-size="18" font-weight="600" fill="#1a1a1a">인증</text>
+      <text x="20" y="105" font-size="10" fill="#666">4 기능</text>
+      <text x="20" y="150" font-size="10" fill="#666">랜딩 · 가입 · 로그인</text>
+
+      <rect x="220" y="0" width="200" height="180" fill="#1a1a1a"/>
+      <text x="240" y="45" font-size="10" fill="#ccc" font-family="'Noto Sans CJK KR', monospace">G2 · HUB</text>
+      <text x="240" y="80" font-size="18" font-weight="600" fill="#fafaf7">대시보드</text>
+      <text x="240" y="105" font-size="10" fill="#ccc">4 기능</text>
+      <text x="240" y="150" font-size="10" fill="#ccc">자산 · 전략 · 알림</text>
+
+      <rect x="440" y="0" width="200" height="180" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+      <text x="460" y="45" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">G3</text>
+      <text x="460" y="80" font-size="18" font-weight="600" fill="#1a1a1a">거래소 연동</text>
+      <text x="460" y="105" font-size="10" fill="#666">4 기능</text>
+      <text x="460" y="150" font-size="10" fill="#666">API 키 · 검증</text>
+
+      <rect x="660" y="0" width="200" height="180" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="3"/>
+      <text x="680" y="45" font-size="10" fill="#ccc" font-family="'Noto Sans CJK KR', monospace">G4 · CORE ★</text>
+      <text x="680" y="80" font-size="18" font-weight="600" fill="#fafaf7">전략 스튜디오</text>
+      <text x="680" y="105" font-size="10" fill="#ccc">6 기능</text>
+      <text x="680" y="150" font-size="10" fill="#ccc">GPT · No-Code · BT</text>
+
+      <rect x="880" y="0" width="200" height="180" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+      <text x="900" y="45" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">G5</text>
+      <text x="900" y="80" font-size="18" font-weight="600" fill="#1a1a1a">거래·리포트</text>
+      <text x="900" y="105" font-size="10" fill="#666">4 기능</text>
+      <text x="900" y="150" font-size="10" fill="#666">내역 · 성과 · RL</text>
+
+      <rect x="1100" y="0" width="200" height="180" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+      <text x="1120" y="45" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">G6</text>
+      <text x="1120" y="80" font-size="18" font-weight="600" fill="#1a1a1a">설정</text>
+      <text x="1120" y="105" font-size="10" fill="#666">4 기능</text>
+      <text x="1120" y="150" font-size="10" fill="#666">프로필 · 알림 · 2FA</text>
+
+      <rect x="1320" y="0" width="120" height="180" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+      <text x="1335" y="45" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">G7</text>
+      <text x="1335" y="80" font-size="16" font-weight="600" fill="#1a1a1a">지원</text>
+      <text x="1335" y="105" font-size="10" fill="#666">3 기능</text>
+
+      <!-- Total stats -->
+      <rect x="0" y="220" width="1440" height="120" fill="#1a1a1a"/>
+      <text x="30" y="265" font-size="14" fill="#ccc" font-family="'Noto Sans CJK KR', monospace">TOTAL SCOPE</text>
+      <text x="30" y="315" font-size="16" fill="#fafaf7">27 화면 · 25 기능 · 4 예외 화면 · Depth 4 · 63 UI 요소</text>
+      <text x="1400" y="315" font-size="14" fill="#fafaf7" text-anchor="end" font-weight="700">MVP 스코프 →</text>
+    </g>
+  </g>
+
+  <!-- ============================ SLIDE 07: IA ============================ -->
+  <g id="slide-07">
+    <rect x="0" y="5400" width="1600" height="900" fill="#f4f4ef"/>
+
+    <text x="80" y="5480" font-size="10" fill="#666" letter-spacing="2" font-family="'Noto Sans CJK KR', monospace">SLIDE 07 / 12 · IA STRUCTURE</text>
+    <line x1="80" y1="5500" x2="1520" y2="5500" stroke="#1a1a1a" stroke-width="2"/>
+
+    <text x="80" y="5580" font-size="14" fill="#666" letter-spacing="2" font-family="'Noto Sans CJK KR', monospace">정보 구조 (IA)</text>
+    <text x="80" y="5660" font-size="42" font-weight="700" fill="#1a1a1a" letter-spacing="-1">사용 빈도 순으로 배치된 사이드바</text>
+
+    <!-- IA embedded reference visual -->
+    <g transform="translate(80, 5760)">
+      <rect x="0" y="0" width="1440" height="460" fill="#fff" stroke="#1a1a1a" stroke-width="2"/>
+
+      <!-- Root -->
+      <rect x="620" y="30" width="200" height="50" fill="#1a1a1a"/>
+      <text x="720" y="60" font-size="14" fill="#fafaf7" text-anchor="middle" font-weight="600">🏠 ROOT</text>
+
+      <!-- Lines from root -->
+      <line x1="720" y1="80" x2="720" y2="110" stroke="#1a1a1a" stroke-width="1.5"/>
+      <line x1="150" y1="110" x2="1290" y2="110" stroke="#1a1a1a" stroke-width="1.5"/>
+
+      <!-- 7 groups (row) -->
+      <g transform="translate(0, 130)">
+        <rect x="80" y="0" width="140" height="80" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+        <line x1="150" y1="-20" x2="150" y2="0" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="150" y="30" font-size="10" fill="#666" text-anchor="middle" font-family="'Noto Sans CJK KR', monospace">G1</text>
+        <text x="150" y="55" font-size="13" font-weight="600" fill="#1a1a1a" text-anchor="middle">인증</text>
+
+        <rect x="260" y="0" width="140" height="80" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+        <line x1="330" y1="-20" x2="330" y2="0" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="330" y="30" font-size="10" fill="#666" text-anchor="middle" font-family="'Noto Sans CJK KR', monospace">G2 · HUB</text>
+        <text x="330" y="55" font-size="13" font-weight="600" fill="#1a1a1a" text-anchor="middle">대시보드</text>
+
+        <rect x="440" y="0" width="140" height="80" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+        <line x1="510" y1="-20" x2="510" y2="0" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="510" y="30" font-size="10" fill="#666" text-anchor="middle" font-family="'Noto Sans CJK KR', monospace">G3</text>
+        <text x="510" y="55" font-size="13" font-weight="600" fill="#1a1a1a" text-anchor="middle">거래소 연동</text>
+
+        <rect x="620" y="0" width="140" height="80" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="2"/>
+        <line x1="690" y1="-20" x2="690" y2="0" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="690" y="30" font-size="10" fill="#ccc" text-anchor="middle" font-family="'Noto Sans CJK KR', monospace">G4 · CORE</text>
+        <text x="690" y="55" font-size="13" font-weight="600" fill="#fafaf7" text-anchor="middle">전략 스튜디오</text>
+
+        <rect x="800" y="0" width="140" height="80" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+        <line x1="870" y1="-20" x2="870" y2="0" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="870" y="30" font-size="10" fill="#666" text-anchor="middle" font-family="'Noto Sans CJK KR', monospace">G5</text>
+        <text x="870" y="55" font-size="13" font-weight="600" fill="#1a1a1a" text-anchor="middle">거래·리포트</text>
+
+        <rect x="980" y="0" width="140" height="80" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+        <line x1="1050" y1="-20" x2="1050" y2="0" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="1050" y="30" font-size="10" fill="#666" text-anchor="middle" font-family="'Noto Sans CJK KR', monospace">G6</text>
+        <text x="1050" y="55" font-size="13" font-weight="600" fill="#1a1a1a" text-anchor="middle">설정</text>
+
+        <rect x="1160" y="0" width="140" height="80" fill="#fff" stroke="#1a1a1a" stroke-width="1"/>
+        <line x1="1230" y1="-20" x2="1230" y2="0" stroke="#1a1a1a" stroke-width="1.5"/>
+        <text x="1230" y="30" font-size="10" fill="#666" text-anchor="middle" font-family="'Noto Sans CJK KR', monospace">G7</text>
+        <text x="1230" y="55" font-size="13" font-weight="600" fill="#1a1a1a" text-anchor="middle">지원</text>
+      </g>
+
+      <!-- Depth explanation -->
+      <text x="80" y="270" font-size="12" fill="#666" font-family="'Noto Sans CJK KR', monospace">DEPTH 4 STRUCTURE</text>
+      <text x="80" y="300" font-size="14" fill="#1a1a1a">Root → 7 Groups → Pages → Sub-pages</text>
+
+      <text x="80" y="345" font-size="12" fill="#666" font-family="'Noto Sans CJK KR', monospace">EXCEPTION SCREENS</text>
+      <text x="80" y="375" font-size="14" fill="#1a1a1a">⚠️ E.1 404 · E.2 500 · <tspan font-weight="600">E.3 API 실패</tspan> · E.4 오프라인</text>
+
+      <text x="800" y="270" font-size="12" fill="#666" font-family="'Noto Sans CJK KR', monospace">DESIGN PRINCIPLES</text>
+      <text x="800" y="300" font-size="12" fill="#1a1a1a">1. 3-Click Rule · 핵심 기능 3클릭 이내</text>
+      <text x="800" y="322" font-size="12" fill="#1a1a1a">2. 빈도순 배치 · 매일 쓰는 메뉴 상단</text>
+      <text x="800" y="344" font-size="12" fill="#1a1a1a">3. 위험 격리 · API/결제는 2FA 재인증</text>
+      <text x="800" y="366" font-size="12" fill="#1a1a1a">4. 실패 가시성 · 예외를 자동 대응 과정으로</text>
+    </g>
+  </g>
+
+  <!-- ============================ SLIDE 08: UX TEST RESULT ============================ -->
+  <g id="slide-08">
+    <rect x="0" y="6300" width="1600" height="900" fill="#fafaf7"/>
+
+    <text x="80" y="6380" font-size="10" fill="#666" letter-spacing="2" font-family="'Noto Sans CJK KR', monospace">SLIDE 08 / 12 · UX TEST RESULT</text>
+    <line x1="80" y1="6400" x2="1520" y2="6400" stroke="#1a1a1a" stroke-width="2"/>
+
+    <text x="80" y="6480" font-size="14" fill="#666" letter-spacing="2" font-family="'Noto Sans CJK KR', monospace">UX 테스트 · 3명 × 6태스크</text>
+    <text x="80" y="6560" font-size="42" font-weight="700" fill="#1a1a1a" letter-spacing="-1">데이터가 말하는 것: 무엇을 고쳐야 하나</text>
+
+    <!-- 3 hypothesis results -->
+    <g transform="translate(80, 6660)">
+      <!-- H1 -->
+      <rect x="0" y="0" width="465" height="240" fill="#1a1a1a"/>
+      <text x="25" y="35" font-size="12" fill="#ccc" font-family="'Noto Sans CJK KR', monospace">H1 · 학습성</text>
+      <text x="25" y="75" font-size="20" fill="#fafaf7" font-weight="600">5분 내 첫 전략 생성</text>
+      <line x1="25" y1="95" x2="440" y2="95" stroke="#666" stroke-width="0.5"/>
+      <text x="25" y="135" font-size="52" fill="#fafaf7" font-weight="700">2:18</text>
+      <text x="25" y="165" font-size="12" fill="#ccc">평균 소요 시간 · 목표 5분의 절반</text>
+      <text x="25" y="220" font-size="14" fill="#fafaf7" font-weight="700">✓ 검증 성공</text>
+
+      <!-- H2 -->
+      <rect x="490" y="0" width="465" height="240" fill="#fff" stroke="#1a1a1a" stroke-width="3"/>
+      <text x="515" y="35" font-size="12" fill="#666" font-family="'Noto Sans CJK KR', monospace">H2 · 신뢰성</text>
+      <text x="515" y="75" font-size="20" fill="#1a1a1a" font-weight="600">비수탁 안전성 인지</text>
+      <line x1="515" y1="95" x2="930" y2="95" stroke="#1a1a1a" stroke-width="0.5"/>
+      <text x="515" y="135" font-size="52" fill="#1a1a1a" font-weight="700">33%</text>
+      <text x="515" y="165" font-size="12" fill="#333">"자산 위치" 정답률 · 1/3 실패</text>
+      <text x="515" y="220" font-size="14" fill="#1a1a1a" font-weight="700">✗ 검증 실패 → 개선 필요</text>
+
+      <!-- H3 -->
+      <rect x="980" y="0" width="465" height="240" fill="#1a1a1a"/>
+      <text x="1005" y="35" font-size="12" fill="#ccc" font-family="'Noto Sans CJK KR', monospace">H3 · 안정감</text>
+      <text x="1005" y="75" font-size="20" fill="#fafaf7" font-weight="600">자동 복구 인지</text>
+      <line x1="1005" y1="95" x2="1420" y2="95" stroke="#666" stroke-width="0.5"/>
+      <text x="1005" y="135" font-size="52" fill="#fafaf7" font-weight="700">100%</text>
+      <text x="1005" y="165" font-size="12" fill="#ccc">"개입 불필요" 인지 · 평균 11초</text>
+      <text x="1005" y="220" font-size="14" fill="#fafaf7" font-weight="700">✓ 검증 성공</text>
+
+      <!-- Key finding -->
+      <rect x="0" y="280" width="1445" height="60" fill="none" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="6 3"/>
+      <text x="20" y="315" font-size="14" fill="#1a1a1a" font-weight="600">🔍 Critical Finding: 강민석(2년 경력)조차 "자산이 어디 있는지" 답변 실패 · 비수탁성이 UI에 드러나지 않음</text>
+    </g>
+  </g>
+
+  <!-- ============================ SLIDE 09: IMPROVEMENTS ============================ -->
+  <g id="slide-09">
+    <rect x="0" y="7200" width="1600" height="900" fill="#f4f4ef"/>
+
+    <text x="80" y="7280" font-size="10" fill="#666" letter-spacing="2" font-family="'Noto Sans CJK KR', monospace">SLIDE 09 / 12 · IMPROVEMENTS</text>
+    <line x1="80" y1="7300" x2="1520" y2="7300" stroke="#1a1a1a" stroke-width="2"/>
+
+    <text x="80" y="7380" font-size="14" fill="#666" letter-spacing="2" font-family="'Noto Sans CJK KR', monospace">테스트 → 개선안 도출</text>
+    <text x="80" y="7460" font-size="42" font-weight="700" fill="#1a1a1a" letter-spacing="-1">9개 개선안 · 데이터로 정당화</text>
+
+    <!-- Before/After Preview -->
+    <g transform="translate(80, 7560)">
+      <text x="0" y="20" font-size="12" fill="#666" font-family="'Noto Sans CJK KR', monospace">BEFORE / AFTER · IMPROVEMENT 01</text>
+
+      <!-- Before -->
+      <rect x="0" y="40" width="420" height="240" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+      <text x="20" y="70" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">BEFORE</text>
+      <text x="20" y="105" font-size="18" font-weight="600" fill="#1a1a1a">₩ 12,450,000</text>
+      <text x="20" y="128" font-size="11" fill="#666">▲ +5.4% (₩640,000)</text>
+      <text x="20" y="180" font-size="11" fill="#666" font-style="italic">"내 돈은 어디에?"</text>
+      <text x="20" y="200" font-size="11" fill="#666" font-style="italic">→ P2/P3 답변 실패</text>
+      <text x="20" y="250" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">HESITATION: 45초</text>
+
+      <!-- Arrow -->
+      <text x="460" y="170" font-size="32" fill="#1a1a1a" text-anchor="middle">→</text>
+
+      <!-- After -->
+      <rect x="500" y="40" width="420" height="240" fill="#fff" stroke="#1a1a1a" stroke-width="3"/>
+      <rect x="500" y="40" width="420" height="30" fill="#1a1a1a"/>
+      <text x="520" y="60" font-size="11" fill="#fafaf7" font-weight="600">🔒 자산은 거래소에 그대로 보관됩니다</text>
+      <text x="520" y="95" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">AFTER</text>
+      <text x="520" y="125" font-size="18" font-weight="600" fill="#1a1a1a">₩ 12,450,000</text>
+      <text x="520" y="148" font-size="11" fill="#666">▲ +5.4% (₩640,000)</text>
+      <rect x="520" y="165" width="18" height="18" fill="#1a1a1a"/>
+      <text x="530" y="178" font-size="10" fill="#fff" text-anchor="middle">🔒</text>
+      <text x="545" y="178" font-size="11" fill="#1a1a1a" font-weight="600">업비트에 보관 중 (비수탁)</text>
+      <text x="520" y="250" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">EXPECTED: 5초 · 정답률 90%+</text>
+
+      <!-- Priority summary -->
+      <g transform="translate(960, 40)">
+        <rect x="0" y="0" width="480" height="240" fill="#1a1a1a"/>
+        <text x="20" y="35" font-size="10" fill="#ccc" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1">PRIORITY DISTRIBUTION</text>
+
+        <text x="20" y="75" font-size="12" fill="#ccc">P0 즉시</text>
+        <text x="440" y="75" font-size="24" fill="#fafaf7" text-anchor="end" font-weight="700">4개</text>
+        <line x1="20" y1="90" x2="460" y2="90" stroke="#666" stroke-width="0.3"/>
+
+        <text x="20" y="120" font-size="12" fill="#ccc">P1 권장</text>
+        <text x="440" y="120" font-size="24" fill="#fafaf7" text-anchor="end" font-weight="700">3개</text>
+        <line x1="20" y1="135" x2="460" y2="135" stroke="#666" stroke-width="0.3"/>
+
+        <text x="20" y="165" font-size="12" fill="#ccc">P2 차후</text>
+        <text x="440" y="165" font-size="24" fill="#fafaf7" text-anchor="end" font-weight="700">2개</text>
+
+        <line x1="20" y1="185" x2="460" y2="185" stroke="#fafaf7" stroke-width="1"/>
+        <text x="20" y="215" font-size="14" fill="#fafaf7" font-weight="700">Sprint 1만 완료해도 임팩트의 65%</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ============================ SLIDE 10: MVP SCOPE ============================ -->
+  <g id="slide-10">
+    <rect x="0" y="8100" width="1600" height="900" fill="#1a1a1a"/>
+
+    <text x="80" y="8180" font-size="10" fill="#666" letter-spacing="2" font-family="'Noto Sans CJK KR', monospace">SLIDE 10 / 12 · MVP SCOPE</text>
+    <line x1="80" y1="8200" x2="1520" y2="8200" stroke="#fafaf7" stroke-width="2"/>
+
+    <text x="80" y="8280" font-size="14" fill="#ccc" letter-spacing="2" font-family="'Noto Sans CJK KR', monospace">MVP 스코프</text>
+    <text x="80" y="8360" font-size="42" font-weight="700" fill="#fafaf7" letter-spacing="-1">v1.0에서 무엇을 만드나</text>
+
+    <!-- MVP includes/excludes -->
+    <g transform="translate(80, 8460)">
+      <rect x="0" y="0" width="700" height="440" fill="#fff"/>
+      <text x="30" y="45" font-size="12" fill="#666" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1">✓ MVP INCLUDES (v1.0)</text>
+      <line x1="30" y1="60" x2="670" y2="60" stroke="#1a1a1a" stroke-width="1"/>
+
+      <text x="30" y="100" font-size="14" fill="#1a1a1a">✓ 회원가입 / 로그인 / 온보딩</text>
+      <text x="30" y="130" font-size="14" fill="#1a1a1a">✓ 업비트 API 연동 (단일 거래소)</text>
+      <text x="30" y="160" font-size="14" fill="#1a1a1a">✓ GPT 자연어 전략 생성</text>
+      <text x="30" y="190" font-size="14" fill="#1a1a1a">✓ No-Code 블록 편집기 (3-block)</text>
+      <text x="30" y="220" font-size="14" fill="#1a1a1a">✓ 백테스팅 실행 + 리포트</text>
+      <text x="30" y="250" font-size="14" fill="#1a1a1a">✓ 실거래 배포 (2FA 필수)</text>
+      <text x="30" y="280" font-size="14" fill="#1a1a1a">✓ 대시보드 · 자산 위젯 (비수탁 명시)</text>
+      <text x="30" y="310" font-size="14" fill="#1a1a1a">✓ 실시간 거래 내역</text>
+      <text x="30" y="340" font-size="14" fill="#1a1a1a">✓ RL 엔진 자동 복구 (E.3)</text>
+      <text x="30" y="370" font-size="14" fill="#1a1a1a">✓ 예외 화면 4개 (404 · 500 · API · 오프라인)</text>
+
+      <text x="30" y="420" font-size="14" font-weight="700" fill="#1a1a1a">18 화면 · 15 P0 기능 · 개발 8주</text>
+    </g>
+
+    <g transform="translate(820, 8460)">
+      <rect x="0" y="0" width="700" height="440" fill="none" stroke="#fafaf7" stroke-width="2"/>
+      <text x="30" y="45" font-size="12" fill="#ccc" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1">✗ POST-MVP (v1.1+)</text>
+      <line x1="30" y1="60" x2="670" y2="60" stroke="#666" stroke-width="1"/>
+
+      <text x="30" y="100" font-size="14" fill="#ccc">○ 바이낸스 · Bybit 다중 거래소</text>
+      <text x="30" y="130" font-size="14" fill="#ccc">○ 전략 마켓플레이스</text>
+      <text x="30" y="160" font-size="14" fill="#ccc">○ 세금 리포트 (CSV 다운로드)</text>
+      <text x="30" y="190" font-size="14" fill="#ccc">○ 소셜 로그인 (Google, Kakao)</text>
+      <text x="30" y="220" font-size="14" fill="#ccc">○ 알림 다중 채널 (카톡 · SMS)</text>
+      <text x="30" y="250" font-size="14" fill="#ccc">○ 모바일 앱 (iOS/Android)</text>
+      <text x="30" y="280" font-size="14" fill="#ccc">○ 전략 그룹 / 폴더 관리</text>
+      <text x="30" y="310" font-size="14" fill="#ccc">○ 실시간 협업 편집</text>
+      <text x="30" y="340" font-size="14" fill="#ccc">○ AI 리밸런싱 자동 제안</text>
+      <text x="30" y="370" font-size="14" fill="#ccc">○ Pro 플랜 결제 시스템</text>
+
+      <text x="30" y="420" font-size="14" font-weight="700" fill="#fafaf7">9 화면 · 10 P1-P2 기능 · v1.1 이후</text>
+    </g>
+  </g>
+
+  <!-- ============================ SLIDE 11: ROADMAP ============================ -->
+  <g id="slide-11">
+    <rect x="0" y="9000" width="1600" height="900" fill="#fafaf7"/>
+
+    <text x="80" y="9080" font-size="10" fill="#666" letter-spacing="2" font-family="'Noto Sans CJK KR', monospace">SLIDE 11 / 12 · ROADMAP</text>
+    <line x1="80" y1="9100" x2="1520" y2="9100" stroke="#1a1a1a" stroke-width="2"/>
+
+    <text x="80" y="9180" font-size="14" fill="#666" letter-spacing="2" font-family="'Noto Sans CJK KR', monospace">개발 로드맵</text>
+    <text x="80" y="9260" font-size="42" font-weight="700" fill="#1a1a1a" letter-spacing="-1">8주 · 4 스프린트</text>
+
+    <!-- 4 sprints timeline -->
+    <g transform="translate(80, 9360)">
+      <!-- Timeline base -->
+      <line x1="30" y1="180" x2="1410" y2="180" stroke="#1a1a1a" stroke-width="2"/>
+
+      <!-- Sprint 1 -->
+      <circle cx="200" cy="180" r="20" fill="#1a1a1a"/>
+      <text x="200" y="187" font-size="12" fill="#fafaf7" text-anchor="middle" font-weight="700">1</text>
+
+      <rect x="80" y="60" width="240" height="90" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+      <text x="95" y="82" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">SPRINT 1 · WK 1-2</text>
+      <text x="95" y="107" font-size="16" font-weight="600" fill="#1a1a1a">인프라 + 인증</text>
+      <text x="95" y="130" font-size="11" fill="#666">Auth · DB · CI/CD · G1</text>
+
+      <text x="200" y="240" font-size="10" fill="#666" text-anchor="middle" font-family="'Noto Sans CJK KR', monospace">2 WEEKS</text>
+
+      <!-- Sprint 2 -->
+      <circle cx="510" cy="180" r="20" fill="#1a1a1a"/>
+      <text x="510" y="187" font-size="12" fill="#fafaf7" text-anchor="middle" font-weight="700">2</text>
+
+      <rect x="390" y="60" width="240" height="90" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+      <text x="405" y="82" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">SPRINT 2 · WK 3-4</text>
+      <text x="405" y="107" font-size="16" font-weight="600" fill="#1a1a1a">거래소 + 대시보드</text>
+      <text x="405" y="130" font-size="11" fill="#666">API 연동 · G2 · G3</text>
+
+      <text x="510" y="240" font-size="10" fill="#666" text-anchor="middle" font-family="'Noto Sans CJK KR', monospace">2 WEEKS</text>
+
+      <!-- Sprint 3 (CORE) -->
+      <circle cx="820" cy="180" r="24" fill="#1a1a1a" stroke="#fafaf7" stroke-width="3"/>
+      <text x="820" y="188" font-size="14" fill="#fafaf7" text-anchor="middle" font-weight="700">3</text>
+
+      <rect x="700" y="60" width="240" height="90" fill="#1a1a1a" stroke="#1a1a1a" stroke-width="3"/>
+      <text x="715" y="82" font-size="10" fill="#ccc" font-family="'Noto Sans CJK KR', monospace">SPRINT 3 · WK 5-6 ★</text>
+      <text x="715" y="107" font-size="16" font-weight="600" fill="#fafaf7">전략 스튜디오</text>
+      <text x="715" y="130" font-size="11" fill="#ccc">GPT · No-Code · BT · G4</text>
+
+      <text x="820" y="240" font-size="10" fill="#666" text-anchor="middle" font-family="'Noto Sans CJK KR', monospace">2 WEEKS · CORE</text>
+
+      <!-- Sprint 4 -->
+      <circle cx="1130" cy="180" r="20" fill="#1a1a1a"/>
+      <text x="1130" y="187" font-size="12" fill="#fafaf7" text-anchor="middle" font-weight="700">4</text>
+
+      <rect x="1010" y="60" width="240" height="90" fill="#fff" stroke="#1a1a1a" stroke-width="1.5"/>
+      <text x="1025" y="82" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace">SPRINT 4 · WK 7-8</text>
+      <text x="1025" y="107" font-size="16" font-weight="600" fill="#1a1a1a">RL 엔진 + QA</text>
+      <text x="1025" y="130" font-size="11" fill="#666">E.3 · G5 · 통합 테스트</text>
+
+      <text x="1130" y="240" font-size="10" fill="#666" text-anchor="middle" font-family="'Noto Sans CJK KR', monospace">2 WEEKS</text>
+
+      <!-- Launch -->
+      <circle cx="1400" cy="180" r="24" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-dasharray="4 2"/>
+      <text x="1400" y="190" font-size="14" fill="#1a1a1a" text-anchor="middle" font-weight="700">🚀</text>
+      <text x="1400" y="230" font-size="12" fill="#1a1a1a" text-anchor="middle" font-weight="700">LAUNCH</text>
+      <text x="1400" y="255" font-size="10" fill="#666" text-anchor="middle" font-family="'Noto Sans CJK KR', monospace">WK 8</text>
+
+      <!-- Stats bar -->
+      <rect x="0" y="320" width="1410" height="80" fill="#1a1a1a"/>
+      <text x="30" y="355" font-size="12" fill="#ccc" font-family="'Noto Sans CJK KR', monospace">TECH STACK</text>
+      <text x="30" y="380" font-size="14" fill="#fafaf7">Frontend: React + TypeScript · Backend: Node.js + Prisma · DB: PostgreSQL · Infra: AWS ECS + Redis</text>
+
+      <text x="1400" y="380" font-size="14" fill="#fafaf7" text-anchor="end" font-weight="700">Team Size: 3-4 devs</text>
+    </g>
+  </g>
+
+  <!-- ============================ SLIDE 12: THANK YOU ============================ -->
+  <g id="slide-12">
+    <rect x="0" y="9900" width="1600" height="900" fill="#1a1a1a"/>
+
+    <text x="80" y="9980" font-size="10" fill="#666" letter-spacing="2" font-family="'Noto Sans CJK KR', monospace">SLIDE 12 / 12 · THANK YOU</text>
+    <line x1="80" y1="10000" x2="1520" y2="10000" stroke="#fafaf7" stroke-width="2"/>
+
+    <text x="80" y="10250" font-size="14" fill="#ccc" letter-spacing="3" font-family="'Noto Sans CJK KR', monospace">감사합니다</text>
+
+    <text x="80" y="10370" font-size="88" font-weight="700" fill="#fafaf7" letter-spacing="-3">Q &amp; A</text>
+
+    <line x1="80" y1="10450" x2="500" y2="10450" stroke="#fafaf7" stroke-width="2"/>
+
+    <text x="80" y="10520" font-size="18" fill="#ccc">코드 없이, 안전하게, AI와 함께 매매하세요.</text>
+
+    <!-- Contact -->
+    <g transform="translate(80, 10620)">
+      <text x="0" y="0" font-size="12" fill="#666" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1">CONTACT</text>
+      <text x="0" y="30" font-size="14" fill="#fafaf7">이제혁 · LikeLion PBL · 2025.07</text>
+    </g>
+
+    <!-- Journey summary -->
+    <g transform="translate(1000, 10250)">
+      <text x="0" y="0" font-size="10" fill="#666" font-family="'Noto Sans CJK KR', monospace" letter-spacing="1">JOURNEY</text>
+
+      <text x="0" y="30" font-size="11" fill="#ccc">M01 · 페르소나 정의</text>
+      <text x="0" y="52" font-size="11" fill="#ccc">M02 · 6컷 시나리오</text>
+      <text x="0" y="74" font-size="11" fill="#ccc">M03 · IA (27 화면 · Depth 4)</text>
+      <text x="0" y="96" font-size="11" fill="#ccc">M04 · Flow 1 + Flow 2</text>
+      <text x="0" y="118" font-size="11" fill="#ccc">M05 · 63 UI 요소 명세</text>
+      <text x="0" y="140" font-size="11" fill="#ccc">M06 · 와이어프레임 리뷰</text>
+      <text x="0" y="162" font-size="11" fill="#ccc">M07 · 통합 기획서</text>
+      <text x="0" y="184" font-size="11" fill="#ccc">M08 · 3명 UX 테스트</text>
+      <text x="0" y="206" font-size="11" fill="#ccc">M09 · 개선안 9개 · Sprint 계획</text>
+      <text x="0" y="228" font-size="11" fill="#fafaf7" font-weight="700">M10 · 개발 협업 문서 ← 지금</text>
+    </g>
+  </g>
+
+</svg>
